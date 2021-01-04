@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+             LazyVStack {
+                ForEach(1..<101, id: \.self){ number in
+                    Text("Hello, \(number)")
+                        .printEach(number)
+                }
+            }
+            .background(Color.blue)
+            
+        }
+    }
+}
+
+extension View {
+    func printEach(_ value: Any...) -> some View {
+        print("\(value)")
+        return self
     }
 }
 
