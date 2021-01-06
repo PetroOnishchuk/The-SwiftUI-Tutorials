@@ -11,7 +11,7 @@ My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_o
 
 
 
-## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject0)
+## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)<br />
 
 [YouTube](https://youtu.be/imxzXEwUNos)<br />
