@@ -16,7 +16,7 @@ My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_o
 
 [YouTube](https://youtu.be/imxzXEwUNos)<br />
 
-## 1. [HStack and LazyHStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/HStackProject01)
+## 2. [HStack and LazyHStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/HStackProject01)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/HStackProject01)<br />
 
 [YouTube](https://youtu.be/Rhs8a5_c3QA)<br />
