@@ -5,7 +5,7 @@ This is my repository with SwiftUI Tutorials
 
 My website [petroonishchuk.com](https://petroonishchuk.com)
 
-My YouTube channel with videos for this tutorials: [YouTube](https://youtu.be/imxzXEwUNos) 
+My YouTube channel with videos for this tutorials: [YouTube](https://www.youtube.com/watch?v=imxzXEwUNos&list=PL3pUvT0fmHNjjoKEmLaad62wmfoLPg3Sq&index=1) 
 
 My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_onishchuk)
 
