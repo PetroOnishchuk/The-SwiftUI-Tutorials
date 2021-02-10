@@ -25,6 +25,6 @@ My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_o
 [YouTube](https://youtu.be/Rhs8a5_c3QA)<br />
 
 ## 3. [List and ForEach](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ListAndForEach01)
-[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ListAndForEach01)
-[YouTube](https://youtu.be/jMa7ZaDESJk)
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ListAndForEach01)<br />
+[YouTube](https://youtu.be/jMa7ZaDESJk)<br /> 
 
