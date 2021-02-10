@@ -1,7 +1,4 @@
 # [The-SwiftUI-Tutorials](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials)
-[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials)<br />
-
-[YouTube](https://www.youtube.com/watch?v=imxzXEwUNos&list=PL3pUvT0fmHNjjoKEmLaad62wmfoLPg3Sq&index=1)<br />
 
 
 This is my repository with SwiftUI Tutorials
