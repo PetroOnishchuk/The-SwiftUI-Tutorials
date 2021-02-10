@@ -12,6 +12,7 @@ My YouTube channel with videos for this tutorials: [YouTube](https://www.youtube
 
 My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_onishchuk)
 
+My Telegram channel: [Telegram Petro Onishchuk](https://t.me/petro_onishchuk_dev)
 
 
 ## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)
