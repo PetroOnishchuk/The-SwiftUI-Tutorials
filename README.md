@@ -11,6 +11,8 @@ My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_o
 
 My Telegram channel: [Telegram Petro Onishchuk](https://t.me/petro_onishchuk_dev)
 
+My 👋Clubhouse account: @petro_onishchuk
+
 
 ## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)<br />
@@ -26,4 +28,8 @@ My Telegram channel: [Telegram Petro Onishchuk](https://t.me/petro_onishchuk_dev
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ListAndForEach01)<br />
 
 [YouTube](https://youtu.be/jMa7ZaDESJk)<br /> 
+
+## 4.[NavigationView, NavigationLink and List](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/NavigationViewNavigationLinkAndList)
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/NavigationViewNavigationLinkAndList)<br />
+[YouTube](https://youtu.be/F0u_XR6tQyA)<br />
 
