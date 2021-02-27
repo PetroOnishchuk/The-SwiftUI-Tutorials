@@ -9,15 +9,32 @@ import SwiftUI
 
 struct FirstEmojiView: View {
     
+    let allEmojiCategories = EmojiCategory.allCategories
+    
     var body: some View {
         
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(allEmojiCategories, id: \.id){ emojiCategory in
+                NavigationLink(
+                    destination: SecondEmojiView(emojiCategory: emojiCategory),
+                    label: {
+                        HStack {
+                            Text(emojiCategory.name.capitalized)
+                            Spacer()
+                            Text(emojiCategory.symbol)
+                        }
+                    })
+            }
+            .navigationTitle(Text("Emoji Categories"))
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         FirstEmojiView()
+            .preferredColorScheme(.dark)
     }
 }

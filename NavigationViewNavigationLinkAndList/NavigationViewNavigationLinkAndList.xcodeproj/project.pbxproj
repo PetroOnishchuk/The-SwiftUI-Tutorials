@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981E1E1525E830AE006B9FC6 /* SecondEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E1E1425E830AE006B9FC6 /* SecondEmojiView.swift */; };
+		981E1E1625E830AE006B9FC6 /* SecondEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981E1E1425E830AE006B9FC6 /* SecondEmojiView.swift */; };
+		98326F9A25E943B3002F991B /* ThirdEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98326F9925E943B3002F991B /* ThirdEmojiView.swift */; };
+		98326F9B25E943B3002F991B /* ThirdEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98326F9925E943B3002F991B /* ThirdEmojiView.swift */; };
 		9853686D25E8081A002D7260 /* NavigationViewNavigationLinkAndListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853685A25E80819002D7260 /* NavigationViewNavigationLinkAndListApp.swift */; };
 		9853686E25E8081A002D7260 /* NavigationViewNavigationLinkAndListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853685A25E80819002D7260 /* NavigationViewNavigationLinkAndListApp.swift */; };
 		9853686F25E8081A002D7260 /* FirstEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853685B25E80819002D7260 /* FirstEmojiView.swift */; };
@@ -18,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		981E1E1425E830AE006B9FC6 /* SecondEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondEmojiView.swift; sourceTree = "<group>"; };
+		98326F9925E943B3002F991B /* ThirdEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdEmojiView.swift; sourceTree = "<group>"; };
 		9853685A25E80819002D7260 /* NavigationViewNavigationLinkAndListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewNavigationLinkAndListApp.swift; sourceTree = "<group>"; };
 		9853685B25E80819002D7260 /* FirstEmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstEmojiView.swift; sourceTree = "<group>"; };
 		9853685C25E80819002D7260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			children = (
 				9853685A25E80819002D7260 /* NavigationViewNavigationLinkAndListApp.swift */,
 				9853685B25E80819002D7260 /* FirstEmojiView.swift */,
+				981E1E1425E830AE006B9FC6 /* SecondEmojiView.swift */,
+				98326F9925E943B3002F991B /* ThirdEmojiView.swift */,
 				9853685C25E80819002D7260 /* Assets.xcassets */,
 				9853687B25E80851002D7260 /* Emoji.swift */,
 			);
@@ -194,6 +202,8 @@
 				9853687C25E80851002D7260 /* Emoji.swift in Sources */,
 				9853686F25E8081A002D7260 /* FirstEmojiView.swift in Sources */,
 				9853686D25E8081A002D7260 /* NavigationViewNavigationLinkAndListApp.swift in Sources */,
+				981E1E1525E830AE006B9FC6 /* SecondEmojiView.swift in Sources */,
+				98326F9A25E943B3002F991B /* ThirdEmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +214,8 @@
 				9853687D25E80851002D7260 /* Emoji.swift in Sources */,
 				9853687025E8081A002D7260 /* FirstEmojiView.swift in Sources */,
 				9853686E25E8081A002D7260 /* NavigationViewNavigationLinkAndListApp.swift in Sources */,
+				981E1E1625E830AE006B9FC6 /* SecondEmojiView.swift in Sources */,
+				98326F9B25E943B3002F991B /* ThirdEmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
