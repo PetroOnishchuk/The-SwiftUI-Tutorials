@@ -31,5 +31,6 @@ My 👋Clubhouse account: @petro_onishchuk
 
 ## 4.[NavigationView, NavigationLink and List](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/NavigationViewNavigationLinkAndList)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/NavigationViewNavigationLinkAndList)<br />
+
 [YouTube](https://youtu.be/F0u_XR6tQyA)<br />
 
