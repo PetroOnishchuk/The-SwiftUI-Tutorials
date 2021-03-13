@@ -7,11 +7,11 @@ My website [petroonishchuk.com](https://petroonishchuk.com)
 
 My YouTube channel with videos for this tutorials: [YouTube](https://www.youtube.com/watch?v=imxzXEwUNos&list=PL3pUvT0fmHNjjoKEmLaad62wmfoLPg3Sq&index=1) 
 
-My Twitter account: [Twitter Petro Onishchuk](https://mobile.twitter.com/petro_onishchuk)
+My Twitter account: [@petro_onishchuk](https://mobile.twitter.com/petro_onishchuk)
 
-My Telegram channel: [Telegram Petro Onishchuk](https://t.me/petro_onishchuk_dev)
+My Telegram channel: [@petro_onishchuk_dev](https://t.me/petro_onishchuk_dev)
 
-My 👋Clubhouse account: @petro_onishchuk
+My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petro_onishchuk)
 
 
 ## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)
