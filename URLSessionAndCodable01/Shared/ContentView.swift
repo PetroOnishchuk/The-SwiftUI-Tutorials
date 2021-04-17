@@ -44,7 +44,11 @@ struct ContentView: View {
             .navigationTitle(Text("Cat facts. Count: \(allCatFacts.count)"))
             .onAppear {
                 CatFactURLSession.shared.loadFacts { catFacts in
-                    self.allCatFacts = catFacts
+                    //MARK: Put process to the Main thread
+                    DispatchQueue.main.async {
+                        self.allCatFacts = catFacts
+                    }
+                    
                 }
             }
         }
