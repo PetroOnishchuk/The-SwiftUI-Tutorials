@@ -40,7 +40,7 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/Un6Wrh98Q1Y)<br />
 
-## 5.2. [URLSession and Codable. Part 2](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndCodable01Part2)
+## 5.2. [URLSession and Codable. Part 2.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndCodable01Part2)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndCodable01Part2)<br />
 
 [YouTube](https://youtu.be/3Y9Rc6XwgRA)
