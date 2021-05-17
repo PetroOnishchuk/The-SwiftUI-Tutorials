@@ -44,3 +44,10 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndCodable01Part2)<br />
 
 [YouTube](https://youtu.be/3Y9Rc6XwgRA)
+
+## 6 [URLSession and POST Request](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndPOSTRequest01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndPOSTRequest01)<br />
+
+[YouTube](https://youtu.be/sBTAOhzHQzQ)
+
