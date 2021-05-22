@@ -51,3 +51,10 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/sBTAOhzHQzQ)
 
+
+## 7. [Alert with Binding<Item?>]( https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/EmojiAlert01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/EmojiAlert01)<br />
+
+[YouTube](https://youtu.be/v8J2vKKCRa0 )
+
