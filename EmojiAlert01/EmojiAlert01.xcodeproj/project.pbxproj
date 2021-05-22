@@ -13,6 +13,10 @@
 		981579172658E0F7000FA064 /* EmojiAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981579022658E0F3000FA064 /* EmojiAlertView.swift */; };
 		981579182658E0F7000FA064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981579032658E0F7000FA064 /* Assets.xcassets */; };
 		981579192658E0F7000FA064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981579032658E0F7000FA064 /* Assets.xcassets */; };
+		9815792C2658E4AE000FA064 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815792B2658E4AE000FA064 /* Emoji.swift */; };
+		9815792D2658E4AE000FA064 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815792B2658E4AE000FA064 /* Emoji.swift */; };
+		9815792F2658E6A7000FA064 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815792E2658E6A7000FA064 /* EmojiViewModel.swift */; };
+		981579302658E6A7000FA064 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815792E2658E6A7000FA064 /* EmojiViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		981579102658E0F7000FA064 /* EmojiAlert01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiAlert01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		981579122658E0F7000FA064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		981579132658E0F7000FA064 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9815792B2658E4AE000FA064 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		9815792E2658E6A7000FA064 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				981579012658E0F3000FA064 /* EmojiAlert01App.swift */,
 				981579022658E0F3000FA064 /* EmojiAlertView.swift */,
+				9815792B2658E4AE000FA064 /* Emoji.swift */,
+				9815792E2658E6A7000FA064 /* EmojiViewModel.swift */,
 				981579032658E0F7000FA064 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9815792C2658E4AE000FA064 /* Emoji.swift in Sources */,
 				981579162658E0F7000FA064 /* EmojiAlertView.swift in Sources */,
 				981579142658E0F7000FA064 /* EmojiAlert01App.swift in Sources */,
+				9815792F2658E6A7000FA064 /* EmojiViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9815792D2658E4AE000FA064 /* Emoji.swift in Sources */,
 				981579172658E0F7000FA064 /* EmojiAlertView.swift in Sources */,
 				981579152658E0F7000FA064 /* EmojiAlert01App.swift in Sources */,
+				981579302658E6A7000FA064 /* EmojiViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
