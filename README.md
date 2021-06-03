@@ -58,4 +58,11 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/v8J2vKKCRa0 )
 
+## 8.[Hierarchical lists with: OutlineGroup DisclosureGroup & List ](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/HierarchicalList01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/HierarchicalList01)<br />
+
+[YouTube](https://youtu.be/_wgKQX5scJU)<br />
+
+
 
