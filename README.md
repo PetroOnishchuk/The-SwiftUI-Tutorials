@@ -64,5 +64,10 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/_wgKQX5scJU)<br />
 
+## 9. [TabView & List](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/EmojiTabView01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/EmojiTabView01)<br />
+
+[YouTube](https://youtu.be/ey57sAx1adA)<br />
 
 
