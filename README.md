@@ -14,6 +14,8 @@ My Telegram channel: [@petro_onishchuk_dev](https://t.me/petro_onishchuk_dev)
 My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petro_onishchuk)
 
 
+
+
 ## 1. [VStack and LazyVStack](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/VStackProject01)<br />
 
