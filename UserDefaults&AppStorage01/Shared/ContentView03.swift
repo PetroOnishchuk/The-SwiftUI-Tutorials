@@ -31,7 +31,7 @@ struct ContentView03: View {
                 }
             }
         }
-      
+        
     }
 }
 

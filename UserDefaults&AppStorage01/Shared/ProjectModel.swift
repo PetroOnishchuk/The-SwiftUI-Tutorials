@@ -40,7 +40,7 @@ struct BasicUser: Codable {
     var secondName: String
 }
 
- 
+
 
 struct CustomUser: Codable {
     var firstName: String

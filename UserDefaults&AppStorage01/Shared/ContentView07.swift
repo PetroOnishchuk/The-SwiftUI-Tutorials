@@ -41,8 +41,8 @@ struct ContentView07: View {
         }
         .navigationTitle(UserDefaultsSection.appStorageAndCustomObjectAndUD.rawValue)
         .onAppear {
-//            guard let data = UserDefaults.standard.data(forKey: "customUser#07"), let userObject = try? JSONDecoder().decode(CustomUser.self, from: data) else { return }
-//            customUser = userObject
+            //            guard let data = UserDefaults.standard.data(forKey: "customUser#07"), let userObject = try? JSONDecoder().decode(CustomUser.self, from: data) else { return }
+            //            customUser = userObject
         }
     }
 }
