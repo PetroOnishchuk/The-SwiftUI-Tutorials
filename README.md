@@ -91,9 +91,9 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/MNDBL7lEZv0)<br />
 
-### 11.2 [FileManager & SwiftUI Part #2/3](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/FileManager%26SwiftUI)
+### 11.2 [FileManager & SwiftUI Part #2/3](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/FileManager%26SwiftUI/FileManager%26SwiftUI01Part02)
         
 
-[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/FileManager%26SwiftUI)<br />
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/FileManager%26SwiftUI/FileManager%26SwiftUI01Part02)<br />
 
 [YouTube](https://youtu.be/ml8v-Hbmhak)<br />
