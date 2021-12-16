@@ -105,7 +105,7 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/T8QaNArfjv4)<br />
 
-## 11. [Alert & SwiftUI 3.0](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/Alert%26SwiftUI01)
+## 12. [Alert & SwiftUI 3.0](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/Alert%26SwiftUI01)
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/Alert%26SwiftUI01)<br />
 
