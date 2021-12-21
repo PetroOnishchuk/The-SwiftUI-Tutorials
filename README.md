@@ -110,3 +110,8 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/Alert%26SwiftUI01)<br />
 
 [YouTube](https://youtu.be/EGkfGyDVYGk)<br />
+
+## 13. [Confirmation Dialog & SwiftUI](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ConfirmationDialog%26SwiftUI01/ConfirmationDialog%26SwiftUI01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/ConfirmationDialog%26SwiftUI01/ConfirmationDialog%26SwiftUI01)
+[YouTube](https://youtu.be/GMQx4azTPj4)
