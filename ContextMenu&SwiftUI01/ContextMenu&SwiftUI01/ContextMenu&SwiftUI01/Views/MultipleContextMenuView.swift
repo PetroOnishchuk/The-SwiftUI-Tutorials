@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct MultipleContextMenuView: View {
+    @EnvironmentObject var projectImageVM: ProjectImageViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                ForEach(projectImageVM.allImages, id:\.self){ image in
+                    Image(systemName: image.name)
+                        .font(.system(size: 35))
+                        .foregroundColor(image.color)
+                        .padding()
+                        .contextMenu {
+                            VStack {
+                                Text("Select Color")
+                                Button("Set Yellow Color") {
+                                    projectImageVM.setColor(.yellow, for: image)
+                                }
+                                Button("Set Blue Color") {
+                                    projectImageVM.setColor(.blue, for: image)
+                                }
+                                Button("Set Red Color") {
+                                    projectImageVM.setColor(.red, for: image)
+                                }
+                                Button("Set Green Color") {
+                                    projectImageVM.setColor(.green, for: image)
+                                }
+                                Button("Set Orange Color") {
+                                    projectImageVM.setColor(.orange, for: image)
+                                }
+                            }
+                        }
+                }
+            }.navigationTitle(Text("Multiply Context Menu"))
+        }
     }
 }
 

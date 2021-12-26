@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct ContextMenu_SwiftUI01App: App {
+    @StateObject var projectImageVM = ProjectImageViewModel()
     
     var body: some Scene {
         WindowGroup {
             MainContentView()
+                .environmentObject(projectImageVM)
                 
         }
     }

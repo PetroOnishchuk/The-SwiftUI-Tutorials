@@ -5,19 +5,24 @@
 //  Created by Petro Onishchuk on 12/24/21.
 //
 
-import SwiftUI
+import SwiftUI 
 
 struct MainContentView: View {
     var body: some View {
         NavigationView {
             List {
                 NavigationLink("Single Context Menu") {
-                   SingleContextMenuView()
+                    SingleContextMenuView()
                 }
-                 
+                NavigationLink("Multiply Context Menu") {
+                    MultipleContextMenuView()
+                }
+                
+                
             }.navigationTitle(Text("Context Menu & SwiftUI"))
-                 
+                .navigationBarTitleDisplayMode(.inline) 
         }
+        .navigationViewStyle(.stack)
     }
 }
 
