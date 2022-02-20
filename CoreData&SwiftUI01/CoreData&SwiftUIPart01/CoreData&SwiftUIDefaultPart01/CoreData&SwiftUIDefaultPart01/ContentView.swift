@@ -3,7 +3,7 @@
 //  CoreData&SwiftUIDefaultPart01
 //
 //  Created by Petro Onishchuk on 2/20/22.
-//
+// 
 
 import SwiftUI
 import CoreData
