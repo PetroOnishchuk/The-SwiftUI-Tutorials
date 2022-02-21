@@ -13,6 +13,7 @@
 		98C99BE527C3B6B300316691 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C99BE427C3B6B300316691 /* Preview Assets.xcassets */; };
 		98C99BEE27C3B6F900316691 /* BooksML.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98C99BEC27C3B6F900316691 /* BooksML.xcdatamodeld */; };
 		98C99BF027C3B74400316691 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C99BEF27C3B74400316691 /* Persistence.swift */; };
+		98C99BF427C3C3C900316691 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C99BF327C3C3C900316691 /* NewBookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		98C99BE427C3B6B300316691 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98C99BED27C3B6F900316691 /* BooksML.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksML.xcdatamodel; sourceTree = "<group>"; };
 		98C99BEF27C3B74400316691 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		98C99BF327C3C3C900316691 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				98C99BDD27C3B6B100316691 /* CoreData_SwiftUIPart02App.swift */,
+				98C99BF227C3C3AA00316691 /* Views */,
 				98C99BEB27C3B6DD00316691 /* Core Data */,
-				98C99BDF27C3B6B100316691 /* ContentView.swift */,
 				98C99BE127C3B6B300316691 /* Assets.xcassets */,
 				98C99BE327C3B6B300316691 /* Preview Content */,
 			);
@@ -79,6 +81,15 @@
 				98C99BEF27C3B74400316691 /* Persistence.swift */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		98C99BF227C3C3AA00316691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98C99BDF27C3B6B100316691 /* ContentView.swift */,
+				98C99BF327C3C3C900316691 /* NewBookView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				98C99BE027C3B6B100316691 /* ContentView.swift in Sources */,
 				98C99BF027C3B74400316691 /* Persistence.swift in Sources */,
 				98C99BDE27C3B6B100316691 /* CoreData_SwiftUIPart02App.swift in Sources */,
+				98C99BF427C3C3C900316691 /* NewBookView.swift in Sources */,
 				98C99BEE27C3B6F900316691 /* BooksML.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

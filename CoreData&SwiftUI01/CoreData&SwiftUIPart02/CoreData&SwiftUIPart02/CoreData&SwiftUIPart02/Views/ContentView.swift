@@ -27,35 +27,20 @@ struct ContentView: View {
                 )
             }.navigationTitle(Text("List of Books"))
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .navigationBarLeading) {
                         EditButton()
                     }
-                    ToolbarItem {
-                        Button(action: addBook) {
-                            Label("Add Item", systemImage: "plus")
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            NewBookView()
+                        } label: {
+                            Label("Add Book View", systemImage: "plus")
                         }
                     }
                 }
         }
     }
-    
-    private func addBook() {
-        withAnimation {
-            let newBook = Book(context: viewContext)
-            newBook.title = "Testing book title"
-            newBook.author = "Testing book author"
-            newBook.publicationDate = Date()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                let error = error as NSError
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-        
-    }
-    
+   
     private func deleteBook(offsets: IndexSet) {
         withAnimation {
             offsets.map {
