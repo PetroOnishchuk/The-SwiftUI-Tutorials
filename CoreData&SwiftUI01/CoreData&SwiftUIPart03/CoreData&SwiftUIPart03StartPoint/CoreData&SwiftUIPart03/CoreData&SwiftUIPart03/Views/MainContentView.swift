@@ -17,9 +17,9 @@ struct MainContentView: View {
             List {
                 ForEach(allBooks){ book in
                     VStack(alignment: .leading) {
-                        Text(book.title ?? "")
-                        Text(book.author ?? "")
-                        Text(book.publicationDate ?? Date(), formatter: bookFormatter)
+                        Text(book.nameOfAuthor)
+                        Text(book.titleOfBook)
+                        Text(book.dateOfPublication)
                     }
                 }
                 .onDelete(perform:
@@ -56,12 +56,12 @@ struct MainContentView: View {
         }
     }
     
-    private let bookFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .medium
-        return formatter
-    }()
+//    private let bookFormatter: DateFormatter = {
+//        let formatter = DateFormatter()
+//        formatter.dateStyle = .short
+//        formatter.timeStyle = .medium
+//        return formatter
+//    }()
 }
 
 struct ContentView_Previews: PreviewProvider {

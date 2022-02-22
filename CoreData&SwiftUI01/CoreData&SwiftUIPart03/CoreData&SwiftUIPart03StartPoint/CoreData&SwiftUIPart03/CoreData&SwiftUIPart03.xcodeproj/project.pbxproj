@@ -14,6 +14,7 @@
 		981BCADB27C51255008D55EB /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCADA27C51255008D55EB /* NewBookView.swift */; };
 		981BCADD27C51299008D55EB /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCADC27C51299008D55EB /* MainContentView.swift */; };
 		981BCADF27C51317008D55EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCADE27C51317008D55EB /* Persistence.swift */; };
+		981BCAE227C518AE008D55EB /* BookExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCAE127C518AE008D55EB /* BookExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		981BCADA27C51255008D55EB /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
 		981BCADC27C51299008D55EB /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		981BCADE27C51317008D55EB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		981BCAE127C518AE008D55EB /* BookExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		981BCAC627C51166008D55EB /* CoreData&SwiftUIPart03 */ = {
 			isa = PBXGroup;
 			children = (
+				981BCAE027C51894008D55EB /* Extension */,
 				981BCAC727C51166008D55EB /* CoreData_SwiftUIPart03App.swift */,
 				981BCAD627C511A8008D55EB /* Views */,
 				981BCAD527C5119E008D55EB /* CoreData */,
@@ -90,6 +93,14 @@
 				981BCADA27C51255008D55EB /* NewBookView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		981BCAE027C51894008D55EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				981BCAE127C518AE008D55EB /* BookExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				981BCAC827C51166008D55EB /* CoreData_SwiftUIPart03App.swift in Sources */,
 				981BCAD927C511EA008D55EB /* BooksML.xcdatamodeld in Sources */,
 				981BCADD27C51299008D55EB /* MainContentView.swift in Sources */,
+				981BCAE227C518AE008D55EB /* BookExtension.swift in Sources */,
 				981BCADF27C51317008D55EB /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
