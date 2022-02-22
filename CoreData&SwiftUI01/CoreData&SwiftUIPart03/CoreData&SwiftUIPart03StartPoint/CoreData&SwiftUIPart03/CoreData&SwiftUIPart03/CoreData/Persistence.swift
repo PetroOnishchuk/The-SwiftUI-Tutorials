@@ -9,6 +9,9 @@ import Foundation
 import CoreData
 
 
+import Foundation
+import CoreData
+
 struct PersistenceController {
     static let shared = PersistenceController()
     
@@ -22,16 +25,9 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
-                fatalError("Unresolved error \(error) \(error.userInfo)")
+                fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         }
     }
-    
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
-        let viewContext = result.container.viewContext
-        return result
-    }()
-
 }
 

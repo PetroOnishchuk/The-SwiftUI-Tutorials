@@ -66,7 +66,9 @@ struct MainContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        let persistenceController = PersistenceController.shared
         MainContentView()
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
              
     }
 }
