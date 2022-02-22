@@ -15,6 +15,8 @@
 		981BCADD27C51299008D55EB /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCADC27C51299008D55EB /* MainContentView.swift */; };
 		981BCADF27C51317008D55EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCADE27C51317008D55EB /* Persistence.swift */; };
 		981BCAE227C518AE008D55EB /* BookExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BCAE127C518AE008D55EB /* BookExtension.swift */; };
+		9889CAE127C53C8B00C9B2D7 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9889CADF27C53C8B00C9B2D7 /* Book+CoreDataClass.swift */; };
+		9889CAE227C53C8B00C9B2D7 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9889CAE027C53C8B00C9B2D7 /* Book+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		981BCADC27C51299008D55EB /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		981BCADE27C51317008D55EB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		981BCAE127C518AE008D55EB /* BookExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExtension.swift; sourceTree = "<group>"; };
+		9889CADF27C53C8B00C9B2D7 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9889CAE027C53C8B00C9B2D7 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 		981BCABB27C51166008D55EB = {
 			isa = PBXGroup;
 			children = (
+				9889CADF27C53C8B00C9B2D7 /* Book+CoreDataClass.swift */,
+				9889CAE027C53C8B00C9B2D7 /* Book+CoreDataProperties.swift */,
 				981BCAC627C51166008D55EB /* CoreData&SwiftUIPart03 */,
 				981BCAC527C51166008D55EB /* Products */,
 			);
@@ -175,9 +181,11 @@
 			files = (
 				981BCADB27C51255008D55EB /* NewBookView.swift in Sources */,
 				981BCAC827C51166008D55EB /* CoreData_SwiftUIPart03App.swift in Sources */,
+				9889CAE127C53C8B00C9B2D7 /* Book+CoreDataClass.swift in Sources */,
 				981BCAD927C511EA008D55EB /* BooksML.xcdatamodeld in Sources */,
 				981BCADD27C51299008D55EB /* MainContentView.swift in Sources */,
 				981BCAE227C518AE008D55EB /* BookExtension.swift in Sources */,
+				9889CAE227C53C8B00C9B2D7 /* Book+CoreDataProperties.swift in Sources */,
 				981BCADF27C51317008D55EB /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

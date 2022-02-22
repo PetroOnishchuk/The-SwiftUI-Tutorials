@@ -17,9 +17,9 @@ struct MainContentView: View {
             List {
                 ForEach(allBooks){ book in
                     VStack(alignment: .leading) {
-                        Text(book.nameOfAuthor)
-                        Text(book.titleOfBook)
-                        Text(book.dateOfPublication)
+                        Text(book.nsNameOfAuthor)
+                        Text(book.nsTitleOfBook)
+                        Text(book.nsDateOfPublication)
                     }
                 }
                 .onDelete(perform:
