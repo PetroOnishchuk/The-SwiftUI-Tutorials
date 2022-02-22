@@ -1,12 +1,13 @@
 //
 //  Persistence.swift
-//  CoreData&SwiftUIPart03StartPoint
+//  CoreData&SwiftUIPart03
 //
 //  Created by Petro Onishchuk on 2/22/22.
 //
 
 import Foundation
 import CoreData
+
 
 struct PersistenceController {
     static let shared = PersistenceController()
@@ -21,9 +22,16 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                fatalError("Unresolved error \(error) \(error.userInfo)")
             }
         }
     }
+    
+    static var preview: PersistenceController = {
+        let result = PersistenceController(inMemory: true)
+        let viewContext = result.container.viewContext
+        return result
+    }()
+
 }
 

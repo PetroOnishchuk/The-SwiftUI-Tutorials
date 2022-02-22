@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct CoreData_SwiftUIPart03App: App {
     var body: some Scene {
+        
         WindowGroup {
             MainContentView()
         }
