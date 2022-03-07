@@ -10,16 +10,21 @@ import SwiftUI
 struct MainContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
  
-    @FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: nil, animation: .default)
+    @FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key:"title", ascending: false)], predicate: NSPredicate(format: "title CONTAINS[c] %@", "red"), animation: .default)
+   
     private var allBooks: FetchedResults<Book>
+    
+  
     var body: some View {
         NavigationView {
             List {
                 ForEach(allBooks){ book in
                     VStack(alignment: .leading) {
-                        Text(book.nameOfAuthor)
                         Text(book.titleOfBook)
+                        Text(book.nameOfAuthor)
+                      
                         Text(book.dateOfPublication)
+                        
                     }
                 }
                 .onDelete(perform:
