@@ -10,7 +10,7 @@ import SwiftUI
 struct MainContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
  
-    @FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key:"title", ascending: false)], predicate: NSPredicate(format: "title CONTAINS[c] %@", "red"), animation: .default)
+    @FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: nil, animation: .default)
    
     private var allBooks: FetchedResults<Book>
     

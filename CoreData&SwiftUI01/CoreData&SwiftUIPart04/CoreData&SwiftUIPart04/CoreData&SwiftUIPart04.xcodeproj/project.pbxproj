@@ -15,6 +15,8 @@
 		9857E7DE27D3CFDD00BEB411 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857E7DD27D3CFDD00BEB411 /* Persistence.swift */; };
 		9857E7E027D3D06F00BEB411 /* BookExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857E7DF27D3D06F00BEB411 /* BookExtension.swift */; };
 		9857E7E227D3D43F00BEB411 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9857E7E127D3D43F00BEB411 /* NewBookView.swift */; };
+		98BCC39927D75F0400E87D59 /* MyBooksAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCC39827D75F0400E87D59 /* MyBooksAppViewModel.swift */; };
+		98BCC39C27D7812F00E87D59 /* ListBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BCC39B27D7812F00E87D59 /* ListBooksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		9857E7DD27D3CFDD00BEB411 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9857E7DF27D3D06F00BEB411 /* BookExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExtension.swift; sourceTree = "<group>"; };
 		9857E7E127D3D43F00BEB411 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		98BCC39827D75F0400E87D59 /* MyBooksAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksAppViewModel.swift; sourceTree = "<group>"; };
+		98BCC39B27D7812F00E87D59 /* ListBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBooksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		9857E7C827D3C85700BEB411 /* CoreData&SwiftUIPart04 */ = {
 			isa = PBXGroup;
 			children = (
+				98BCC39727D75EEC00E87D59 /* ViewModel */,
 				9857E7C927D3C85700BEB411 /* CoreData_SwiftUIPart04App.swift */,
 				9857E7D827D3CF7800BEB411 /* Views */,
 				9857E7D927D3CF9500BEB411 /* Extension */,
@@ -91,6 +96,7 @@
 			children = (
 				9857E7CB27D3C85700BEB411 /* MainContentView.swift */,
 				9857E7E127D3D43F00BEB411 /* NewBookView.swift */,
+				98BCC39B27D7812F00E87D59 /* ListBooksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +107,14 @@
 				9857E7DF27D3D06F00BEB411 /* BookExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		98BCC39727D75EEC00E87D59 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98BCC39827D75F0400E87D59 /* MyBooksAppViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +190,10 @@
 				9857E7E027D3D06F00BEB411 /* BookExtension.swift in Sources */,
 				9857E7CC27D3C85700BEB411 /* MainContentView.swift in Sources */,
 				9857E7E227D3D43F00BEB411 /* NewBookView.swift in Sources */,
+				98BCC39C27D7812F00E87D59 /* ListBooksView.swift in Sources */,
 				9857E7DE27D3CFDD00BEB411 /* Persistence.swift in Sources */,
 				9857E7CA27D3C85700BEB411 /* CoreData_SwiftUIPart04App.swift in Sources */,
+				98BCC39927D75F0400E87D59 /* MyBooksAppViewModel.swift in Sources */,
 				9857E7DC27D3CFC300BEB411 /* BooksML.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
