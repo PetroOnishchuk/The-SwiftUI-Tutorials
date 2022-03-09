@@ -63,8 +63,8 @@
 		9857E7C827D3C85700BEB411 /* CoreData&SwiftUIPart04 */ = {
 			isa = PBXGroup;
 			children = (
-				98BCC39727D75EEC00E87D59 /* ViewModel */,
 				9857E7C927D3C85700BEB411 /* CoreData_SwiftUIPart04App.swift */,
+				98BCC39727D75EEC00E87D59 /* ViewModel */,
 				9857E7D827D3CF7800BEB411 /* Views */,
 				9857E7D927D3CF9500BEB411 /* Extension */,
 				9857E7D727D3CF7100BEB411 /* CoreData */,

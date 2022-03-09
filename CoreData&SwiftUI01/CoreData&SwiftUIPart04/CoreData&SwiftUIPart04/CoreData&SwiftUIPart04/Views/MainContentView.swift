@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct MainContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
- 
-    @FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: nil, animation: .default)
-   
-    private var allBooks: FetchedResults<Book>
+//    @Environment(\.managedObjectContext) private var viewContext
+//
+//    @FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: nil, animation: .default)
+//
+//    private var allBooks: FetchedResults<Book>
+    @EnvironmentObject var myBooksAppVM: MyBooksAppViewModel
     
-  
+     
     var body: some View {
         NavigationView {
             List {
-                ForEach(allBooks){ book in
-                    VStack(alignment: .leading) {
-                        Text(book.titleOfBook)
-                        Text(book.nameOfAuthor)
-                      
-                        Text(book.dateOfPublication)
-                        
+                Picker("Selected descriptors", selection: $myBooksAppVM.selectedDescriptors) {
+                    ForEach(DescriptorsCollections.allCases, id: \.self) {
+                        Text(myBooksAppVM.takeNameDescriptors(selected: $0))
                     }
                 }
-                .onDelete(perform:
-                            deleteBook
-                )
+                .pickerStyle(.segmented)
+                if myBooksAppVM.selectedDescriptors == .publicationDate {
+                    DatePicker("Publication Date", selection: $myBooksAppVM.predicateDate, in: ...Date(), displayedComponents: .date)
+                        .datePickerStyle(.compact)
+                } else {
+                    TextField("Search by Author", text: $myBooksAppVM.textForPredicate)
+                }
+                ListBooksView(inputDescription: myBooksAppVM.selectedDescriptors, inputPredicate: myBooksAppVM.textForPredicate, predicateDate: myBooksAppVM.predicateDate)
+           
             }.navigationTitle(Text("List of Books"))
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -46,27 +49,8 @@ struct MainContentView: View {
         }
     }
    
-    private func deleteBook(offsets: IndexSet) {
-        withAnimation {
-            offsets.map {
-                allBooks[$0]
-            }.forEach(viewContext.delete(_:))
-            
-            do {
-                try viewContext.save()
-            } catch {
-                let error = error as NSError
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-    }
-    
-//    private let bookFormatter: DateFormatter = {
-//        let formatter = DateFormatter()
-//        formatter.dateStyle = .short
-//        formatter.timeStyle = .medium
-//        return formatter
-//    }()
+  
+ 
 }
 
 struct MainContentView_Previews: PreviewProvider {

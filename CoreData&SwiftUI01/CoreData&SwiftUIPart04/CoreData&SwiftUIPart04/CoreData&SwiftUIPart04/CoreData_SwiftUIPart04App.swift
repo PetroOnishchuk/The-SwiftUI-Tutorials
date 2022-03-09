@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct CoreData_SwiftUIPart04App: App {
+    let persistenceController = PersistenceController.shared
+    @StateObject var myBooksAppVM = MyBooksAppViewModel()
     var body: some Scene {
-        let persistenceController = PersistenceController.shared
-        
         WindowGroup {
             MainContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(myBooksAppVM)
         }
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Petro Onishchuk
 //
 
-import SwiftUI 
+import SwiftUI
 
 struct ListBooksView: View {
     @EnvironmentObject var myBooksAppVM: MyBooksAppViewModel
@@ -38,7 +38,7 @@ struct ListBooksView: View {
             }
         }
     }
-    
+   
     init(inputDescription: DescriptorsCollections, inputPredicate: String, predicateDate: Date) {
         
         if inputDescription == DescriptorsCollections.publicationDate {
@@ -48,24 +48,22 @@ struct ListBooksView: View {
             
             let predicate = NSPredicate(format: "publicationDate >= %@ AND publicationDate <= %@", startDate as NSDate, endDate as NSDate)
             self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key: inputDescription.rawValue, ascending: true)], predicate: predicate, animation: .default)
-        } else {
             
+        } else {
             switch (inputDescription.rawValue, inputPredicate) {
                 
-            case let (myDescription, myPredicate) where myDescription.isEmpty && !myPredicate.isEmpty:
-                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key: myDescription, ascending: true)], predicate: NSPredicate(format: "author CONTAINS[c] %@", myPredicate), animation: .default)
-            
-            case let (myDescription, myPredicate) where !myDescription.isEmpty:
-                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key: myDescription, ascending: true),], predicate: NSPredicate(format: "author CONTAINS[c] %@", myPredicate), animation: .default)
-            case let (myDescription, myPredicate) where !myDescription.isEmpty && myPredicate.isEmpty:
-                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key:myDescription, ascending: true)], predicate: nil, animation: .default)
-            
+            case let (myDesc, myPredict) where myDesc.isEmpty && !myPredict.isEmpty:
+                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: NSPredicate(format: "author CONTAINS[c] %@", myPredict), animation: .default)
+            case let (myDesc, myPredict) where !myPredict.isEmpty:
+                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key: myDesc, ascending: true)], predicate: NSPredicate(format: "author CONTAINS[c] %@", myPredict), animation: .default)
+            case let (myDesc, myPredict) where !myDesc.isEmpty && myPredict.isEmpty:
+                self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [NSSortDescriptor(key: myDesc, ascending: true)], predicate: nil, animation: .default)
             default:
                 self._allBooks = FetchRequest(entity: Book.entity(), sortDescriptors: [], predicate: nil, animation: .default)
             }
         }
-        
     }
+   
     
 }
 
