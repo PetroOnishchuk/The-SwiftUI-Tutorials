@@ -67,8 +67,8 @@ struct ListBooksView: View {
     
 }
 
-//struct ListBooksView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ListBooksView()
-//    }
-//}
+struct ListBooksView_Previews: PreviewProvider {
+    static var previews: some View {
+        ListBooksView(inputDescription: .author, inputPredicate: "", predicateDate: Date())
+    }
+}
