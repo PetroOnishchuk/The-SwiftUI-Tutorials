@@ -15,7 +15,7 @@ struct MainContentView: View {
             }.toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        // NewBookView()
+                       NewBookView()
                     }label: {
                         Label("Label", systemImage: "plus")
                     }

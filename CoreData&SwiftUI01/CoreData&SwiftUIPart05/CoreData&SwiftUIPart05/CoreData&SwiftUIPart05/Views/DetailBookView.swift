@@ -16,9 +16,9 @@ struct DetailBookView: View {
             Text("Published: \(selectedBook.dateOfPublication)")
             Text("Author: \(selectedBook.nameOfAuthor)")
             NavigationLink {
-                // BooksOfAuthor
+                BooksOfAuthor(allBooksOfAuthor: selectedBook.author?.allBooks ?? [], nameOfAuthor: selectedBook.nameOfAuthor)
             } label: {
-                Text("All books of Author")
+                Text("All books of Author: \(selectedBook.nameOfAuthor)")
             }
         }.navigationTitle(Text("Detail of Book"))
     }
