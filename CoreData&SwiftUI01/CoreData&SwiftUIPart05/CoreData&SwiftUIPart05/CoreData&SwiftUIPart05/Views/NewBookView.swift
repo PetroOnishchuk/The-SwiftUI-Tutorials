@@ -22,7 +22,7 @@ struct NewBookView: View {
                 .datePickerStyle(.compact)
             Text("Author: \(selectedAuthor?.nameOfAuthor ?? "Please, select Author")")
             NavigationLink {
-                //ListOfAuthors
+                ListOfAuthorsView(selectedAuthor: $selectedAuthor)
             } label: {
                 Text("Select an Author")
             }
