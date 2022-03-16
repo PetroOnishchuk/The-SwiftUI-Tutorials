@@ -43,6 +43,7 @@ struct NewBookView: View {
                     fatalError("Unresolved error \(error), \(error.userInfo)")
                 }
             }
+            .disabled(selectedAuthor == nil)
         }.navigationTitle(Text("Create a new Book"))
     }
 }

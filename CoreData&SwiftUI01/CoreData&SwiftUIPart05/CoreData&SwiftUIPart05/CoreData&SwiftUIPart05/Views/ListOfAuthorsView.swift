@@ -35,7 +35,7 @@ struct ListOfAuthorsView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink{
-                        // NewAuthorView
+                        NewAuthorView()
                     } label: {
                         Label("New Author", systemImage: "plus")
                     }
