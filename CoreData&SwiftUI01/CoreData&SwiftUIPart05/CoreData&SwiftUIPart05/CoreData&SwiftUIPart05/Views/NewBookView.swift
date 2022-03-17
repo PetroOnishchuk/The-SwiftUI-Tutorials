@@ -37,6 +37,7 @@ struct NewBookView: View {
                 
                 do {
                     try viewContext.save()
+                    self.myBookAppVM.cleanBookFields()
                     self.presentation.wrappedValue.dismiss()
                 } catch {
                     let error = error as NSError

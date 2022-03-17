@@ -22,7 +22,7 @@ struct MainContentView: View {
                 }
             })
             .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle(Text("List pf Books"))
+                .navigationTitle(Text("List all Books"))
         }
     }
 }
