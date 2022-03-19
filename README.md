@@ -128,3 +128,46 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/Popover%26SwiftUI01/Popover%26SwiftUI01)<br />
 
 [YouTube](https://youtu.be/rS3yKI0IJ9M)<br />
+
+## 16. [CoreData & SwiftUI](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01)<br />
+
+[YouTube](https://www.youtube.com/watch?v=C1M2nJ7xphI&list=PL3pUvT0fmHNh6bARqrWYE6_79WF_HpU-w)<br />
+
+### 16.1 [CoreData & SwiftUI. Part #1/5](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart01)
+(Basic tutorial. Compare default and custom project.)
+        
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart01)<br />
+
+[YouTube](https://youtu.be/C1M2nJ7xphI)<br />
+
+### 16.2 [CoreData & SwiftUI. Part #2/5](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart02)
+(Basic tutorial. CoreData and multiple views.)
+        
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart02)<br />
+
+[YouTube](https://youtu.be/vW5JmWEt50g)<br />
+
+### 16.3 [CoreData & SwiftUI Part #3/5](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart03)
+(Work with NSManagedObject. Extension for Entity and create NSManagedObject Subclass)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart03)<br />
+
+[YouTube](https://youtu.be/q9razGJcPVg)<br />
+
+### 16.4 [CoreData & SwiftUI Part #4/5](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart04)
+ (Work with: NSNSPredicate NSSortDescriptor)       
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart04)<br />
+
+[YouTube](https://youtu.be/54CIxDLvNow)<br />
+
+### 16.4 [CoreData & SwiftUI Part #5/5](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart05)
+(CoreData & Relationship )
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/CoreData%26SwiftUI01/CoreData%26SwiftUIPart05)<br />
+
+[YouTube](https://youtu.be/u4UDrOrRFZU)<br />
