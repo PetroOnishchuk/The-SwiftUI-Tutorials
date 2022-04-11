@@ -62,7 +62,7 @@ func HandleUserRequest(write http.ResponseWriter, request *http.Request) {
 			http.Error(write, decErr.Error(), http.StatusBadRequest)
 			return
 		}
-		newFormUser, foudErr := founcUser(user, PostUsers)
+		newFormUser, foudErr := foundUser(user, PostUsers)
 		if foudErr != nil {
 			http.Error(write, foudErr.Error(), http.StatusBadRequest)
 			return
@@ -74,7 +74,7 @@ func HandleUserRequest(write http.ResponseWriter, request *http.Request) {
 	}
 }
 
-func founcUser(userForm UserForm, postUsers []PostUser) (PostUser, error) {
+func foundUser(userForm UserForm, postUsers []PostUser) (PostUser, error) {
 	for _, v := range postUsers {
 		if (strings.EqualFold(v.Name, userForm.Name)) && (strings.EqualFold(v.Job, userForm.Job)) {
 			return v, nil
