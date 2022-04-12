@@ -12,6 +12,7 @@
 		98AF0AF72805CDC6004BAC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98AF0AF62805CDC6004BAC42 /* Assets.xcassets */; };
 		98AF0AFA2805CDC6004BAC42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98AF0AF92805CDC6004BAC42 /* Preview Assets.xcassets */; };
 		98AF0B022805CE13004BAC42 /* Page+UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF0B012805CE12004BAC42 /* Page+UserModel.swift */; };
+		98AF0B062805D598004BAC42 /* NetworkGETRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF0B052805D598004BAC42 /* NetworkGETRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		98AF0AF62805CDC6004BAC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98AF0AF92805CDC6004BAC42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98AF0B012805CE12004BAC42 /* Page+UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+UserModel.swift"; sourceTree = "<group>"; };
+		98AF0B052805D598004BAC42 /* NetworkGETRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGETRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				98AF0AF22805CDC4004BAC42 /* URLSessionAndGETRequestAsyncAwait01App.swift */,
 				98AF0B032805CE1B004BAC42 /* Views */,
+				98AF0B042805D559004BAC42 /* Services */,
 				98AF0B002805CDF0004BAC42 /* Model */,
 				98AF0AF62805CDC6004BAC42 /* Assets.xcassets */,
 				98AF0AF82805CDC6004BAC42 /* Preview Content */,
@@ -84,6 +87,14 @@
 				98AF0AF42805CDC4004BAC42 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		98AF0B042805D559004BAC42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98AF0B052805D598004BAC42 /* NetworkGETRequest.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98AF0B022805CE13004BAC42 /* Page+UserModel.swift in Sources */,
+				98AF0B062805D598004BAC42 /* NetworkGETRequest.swift in Sources */,
 				98AF0AF52805CDC4004BAC42 /* ContentView.swift in Sources */,
 				98AF0AF32805CDC4004BAC42 /* URLSessionAndGETRequestAsyncAwait01App.swift in Sources */,
 			);
