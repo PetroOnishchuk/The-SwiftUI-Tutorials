@@ -52,7 +52,7 @@ struct Page: Codable {
         case page
         case perPage = "per_page"
         case total
-        case totalPages = "total_Pages"
+        case totalPages = "total_pages"
         case allUsers = "data"
         case support
     }

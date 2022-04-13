@@ -134,4 +134,126 @@ class NetworkGETRequest {
             throw error
         }
     }
+    
+    //MARK: Page GET Request with @escaping
+    func pageGetRequestEscaping(completionHandler: @escaping (Result<(HTTPURLResponse, Page), Error>) -> Void) {
+        
+        //MARK: URLComponents
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "reqres.in"
+        components.path = "/api/users"
+        components.queryItems = [URLQueryItem(name: "page", value: "2")]
+        
+        // MARK: CreateURL
+        guard let url = components.url else {
+            completionHandler(.failure(MyRequestError.invalidURL))
+            return
+        }
+        
+        //MARK: URLRequest
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET" //optional
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            if let error = error {
+                completionHandler(.failure(error))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse else {
+                completionHandler(.failure(MyRequestError.invalidHTTPURLResponse))
+                return
+            }
+            
+            let statusCode = response.statusCode
+            
+            guard (200...299).contains(statusCode) else {
+                completionHandler(.failure(MyRequestError.serverSideErrorWithResponse(statusCode)))
+                return
+            }
+            
+            guard let data = data else {
+                completionHandler(.failure(MyRequestError.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let newPage = try decoder.decode(Page.self, from: data)
+                completionHandler(.success((response, newPage)))
+                
+            } catch (let decodingError) {
+                completionHandler(.failure(decodingError))
+            }
+
+
+        }.resume()
+    }
+    
+    //MARK: PAge Get Request with async/await
+    
+    func pageGetRequestAsyncAwait() async throws -> (HTTPURLResponse, Page) {
+        
+        //MARK: URLComponents
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "reqres.in"
+        components.path = "/api/users"
+        components.queryItems = [URLQueryItem(name: "page", value: "2")]
+        
+        //MARK: Create URL
+        guard let url = components.url else {
+            throw MyRequestError.invalidURL
+        }
+        
+        // MARK: URLRequest
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET" // optional
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
+        
+        guard let response = response as? HTTPURLResponse else {
+            throw MyRequestError.invalidHTTPURLResponse
+        }
+        
+        let statusCode = response.statusCode
+        
+        guard (200...299).contains(statusCode) else {
+            throw MyRequestError.serverSideErrorWithResponse(statusCode)
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            let newPage = try decoder.decode(Page.self, from: data)
+            return (response, newPage)
+            
+        } catch (let decodingError) {
+            throw decodingError
+        }
+                
+    }
+    
+    //MARK: Page Get Request with @escaping and async/await
+    
+    func pageGetRequestEscapingAndAsyncAwait() async throws -> (HTTPURLResponse, Page) {
+        
+        do {
+            return try await withCheckedThrowingContinuation({ condition in
+                pageGetRequestEscaping { result in
+                    switch result {
+                    case .success((let response, let newPage)):
+                        condition.resume(returning: (response, newPage))
+                    case .failure(let error):
+                        condition.resume(throwing: error)
+                    }
+                }
+            })
+        } catch (let error ) {
+            throw error
+        }
+    }
 }

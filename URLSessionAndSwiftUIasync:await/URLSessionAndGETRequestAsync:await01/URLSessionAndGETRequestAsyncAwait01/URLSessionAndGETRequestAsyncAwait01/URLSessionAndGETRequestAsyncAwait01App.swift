@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct URLSessionAndGETRequestAsyncAwait01App: App {
+    @StateObject var getAppVM = GetAppViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
+                .environmentObject(getAppVM)
         }
     }
 }
