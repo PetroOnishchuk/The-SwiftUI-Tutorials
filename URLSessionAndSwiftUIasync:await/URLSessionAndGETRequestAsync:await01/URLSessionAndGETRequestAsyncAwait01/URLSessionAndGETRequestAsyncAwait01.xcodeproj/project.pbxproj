@@ -18,6 +18,7 @@
 		98AF6F102806E719005B3710 /* SystemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF6F0F2806E719005B3710 /* SystemImageView.swift */; };
 		98AF6F122806E874005B3710 /* SingleUserRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF6F112806E874005B3710 /* SingleUserRequestView.swift */; };
 		98AF6F1428072115005B3710 /* PageRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF6F1328072115005B3710 /* PageRequestView.swift */; };
+		98AF6F16280738F4005B3710 /* LocalUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF6F15280738F4005B3710 /* LocalUsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		98AF6F0F2806E719005B3710 /* SystemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImageView.swift; sourceTree = "<group>"; };
 		98AF6F112806E874005B3710 /* SingleUserRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserRequestView.swift; sourceTree = "<group>"; };
 		98AF6F1328072115005B3710 /* PageRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRequestView.swift; sourceTree = "<group>"; };
+		98AF6F15280738F4005B3710 /* LocalUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				98AF6F0D2806E640005B3710 /* SingleUserView.swift */,
 				98AF6F0F2806E719005B3710 /* SystemImageView.swift */,
 				98AF6F1328072115005B3710 /* PageRequestView.swift */,
+				98AF6F15280738F4005B3710 /* LocalUsersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				98AF6F122806E874005B3710 /* SingleUserRequestView.swift in Sources */,
 				98AF0B062805D598004BAC42 /* NetworkGETRequest.swift in Sources */,
 				98AF6F0C2806E19A005B3710 /* GetAppViewModel.swift in Sources */,
+				98AF6F16280738F4005B3710 /* LocalUsersView.swift in Sources */,
 				98AF0AF52805CDC4004BAC42 /* MainContentView.swift in Sources */,
 				98AF0AF32805CDC4004BAC42 /* URLSessionAndGETRequestAsyncAwait01App.swift in Sources */,
 			);

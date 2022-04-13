@@ -23,6 +23,11 @@ struct MainContentView: View {
                 } label: {
                     Text("Page GET Request")
                 }
+                NavigationLink {
+                    LocalUsersView()
+                } label: {
+                    Text("Users Get Request & LocalHost")
+                }
             }.navigationBarTitleDisplayMode(.inline)
                 .navigationTitle(Text("GET Request & @escaping & async/await"))
         }

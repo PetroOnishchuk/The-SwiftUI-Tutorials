@@ -256,4 +256,50 @@ class NetworkGETRequest {
             throw error
         }
     }
+    
+        //MARK: Users Get Request with localHost
+    func usersGetRequestAsyncAwaitLocal() async throws -> (HTTPURLResponse, [User]) {
+        
+        guard let rawURL = URL(string: "http://localhost:5000/users") else {
+            throw MyRequestError.invalidURL
+        }
+        var components = URLComponents(url: rawURL, resolvingAgainstBaseURL: true)
+        components?.queryItems = [URLQueryItem(name: "page", value: "2")]
+        
+        //MARK: CreateURL
+        guard let url = components?.url else {
+            throw MyRequestError.invalidURL
+        }
+        
+        
+        //MARK: URLRequest
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET" // optional
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
+        
+        guard let response = response as? HTTPURLResponse else {
+            throw MyRequestError.invalidHTTPURLResponse
+        }
+        
+        let statusCode = response.statusCode
+        
+        guard (200...299).contains(statusCode) else {
+            if let dataString = String(data: data, encoding: .utf8){
+                print("Data Error String: \(dataString)")
+            }
+            throw MyRequestError.serverSideErrorWithResponse(statusCode)
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            let newUsers = try decoder.decode([User].self, from: data)
+            return (response, newUsers)
+            
+        } catch (let error as NSError) {
+            throw error
+        }
+    }
 }

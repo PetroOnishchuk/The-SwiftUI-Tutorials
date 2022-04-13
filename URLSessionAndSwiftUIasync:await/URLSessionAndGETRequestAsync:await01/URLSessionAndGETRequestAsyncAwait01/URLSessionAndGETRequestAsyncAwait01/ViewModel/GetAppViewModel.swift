@@ -116,4 +116,16 @@ class GetAppViewModel: ObservableObject {
             print("Error: \(error) \(error.localizedDescription) \(error.userInfo)")
         }
     }
+    
+    //MARK: Run Users Get Request with LocalHost
+    func runUsersGetRequestAsyncAwaitLocal() async {
+        do {
+            let (response, newUsers) = try await networkGETRequest.usersGetRequestAsyncAwaitLocal()
+            mainPage.allUsers = newUsers
+            print("Response Status Code \(response.statusCode)")
+        } catch (let error as NSError) {
+            print ("Error LocalHost: \(error) \(error.localizedDescription) \(error.userInfo)")
+        }
+            
+    }
 }

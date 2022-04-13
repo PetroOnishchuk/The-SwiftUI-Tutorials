@@ -12,9 +12,6 @@ struct PageRequestView: View {
     
     @EnvironmentObject var getAppViewModel: GetAppViewModel
     
-    
-    
-    
     var body: some View {
         List {
             Section {
@@ -51,7 +48,7 @@ struct PageRequestView: View {
                 } label: {
                     Text("async/await & @escaping & GET Request")
                 }
-                Button {
+                Button(role: .destructive) {
                     getAppViewModel.cleanPageFields()
                 } label: {
                     Text("Clean Page fields")
