@@ -41,6 +41,7 @@ struct User: Codable {
 
 enum MyRequestError: Error {
     case invalidURL
+    case invalidURLComponents
     case invalidData
     case serverSideErrorWithResponse(Int)
     case invalidHTTPURLResponse

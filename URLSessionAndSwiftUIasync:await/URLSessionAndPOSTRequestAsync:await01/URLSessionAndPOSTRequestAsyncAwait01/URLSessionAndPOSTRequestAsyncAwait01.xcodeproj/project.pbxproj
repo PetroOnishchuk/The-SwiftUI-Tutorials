@@ -13,6 +13,7 @@
 		98B7D0FE280B099600148A13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B7D0FD280B099600148A13 /* Preview Assets.xcassets */; };
 		98B7D10A280B0A5A00148A13 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7D109280B0A5A00148A13 /* DateFormatterExtension.swift */; };
 		98B7D10C280B0A7F00148A13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7D10B280B0A7F00148A13 /* User.swift */; };
+		98B7D10E280B185A00148A13 /* NetworkPOSTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7D10D280B185A00148A13 /* NetworkPOSTRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		98B7D0FD280B099600148A13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98B7D109280B0A5A00148A13 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 		98B7D10B280B0A7F00148A13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		98B7D10D280B185A00148A13 /* NetworkPOSTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPOSTRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		98B7D108280B09F500148A13 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				98B7D10D280B185A00148A13 /* NetworkPOSTRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				98B7D0F9280B099300148A13 /* ContentView.swift in Sources */,
 				98B7D0F7280B099300148A13 /* URLSessionAndPOSTRequestAsyncAwait01App.swift in Sources */,
 				98B7D10A280B0A5A00148A13 /* DateFormatterExtension.swift in Sources */,
+				98B7D10E280B185A00148A13 /* NetworkPOSTRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
