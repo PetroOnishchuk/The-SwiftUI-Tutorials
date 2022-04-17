@@ -49,7 +49,7 @@ class NetworkPOSTRequest {
             //            request.httpBody = secHTTPBody
             
         } catch (let encoderError) {
-            
+            completionHandler(.failure(encoderError))
         }
         
         URLSession.shared.dataTask(with: request) { data, response, error in
