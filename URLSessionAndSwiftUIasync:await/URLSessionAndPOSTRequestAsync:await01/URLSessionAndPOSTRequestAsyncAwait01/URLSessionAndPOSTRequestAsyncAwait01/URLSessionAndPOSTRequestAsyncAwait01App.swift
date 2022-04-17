@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct URLSessionAndPOSTRequestAsyncAwait01App: App {
+    
+    @StateObject var posAppVM = PostRequestViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
+                .environmentObject(posAppVM)
         }
     }
 }
