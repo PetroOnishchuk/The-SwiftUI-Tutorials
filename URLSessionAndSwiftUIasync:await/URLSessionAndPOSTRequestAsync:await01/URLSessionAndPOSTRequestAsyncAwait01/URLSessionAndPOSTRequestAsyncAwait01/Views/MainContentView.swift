@@ -12,10 +12,10 @@ struct MainContentView: View {
         NavigationView {
             List {
                 NavigationLink("POST Request with reqres.in") {
-                    //
+                    UserPostRequestView()
                 }
                 NavigationLink("POST Request with Local Server") {
-                    //
+                    LocalUserPOSTRequestView()
                 }
             }.navigationTitle(Text("POST request & @escaping & async/await"))
             
