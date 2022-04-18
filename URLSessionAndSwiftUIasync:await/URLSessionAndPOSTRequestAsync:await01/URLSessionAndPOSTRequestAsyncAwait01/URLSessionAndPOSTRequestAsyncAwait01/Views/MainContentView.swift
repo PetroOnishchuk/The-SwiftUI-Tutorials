@@ -18,8 +18,8 @@ struct MainContentView: View {
                     LocalUserPOSTRequestView()
                 }
             }.navigationTitle(Text("POST request & @escaping & async/await"))
-            
-        }.navigationBarTitleDisplayMode(.inline)
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
- @MainActor
+ //@MainActor
 class GetAppViewModel: ObservableObject {
     
     @Published var mainUser = AllUserData(user: User(id: 0, email: "", firstName: "", lastName: "", avatar: ""), support: Support(url: "", text: ""))
@@ -51,7 +51,7 @@ class GetAppViewModel: ObservableObject {
     }
     
     //MARK: Run UserGETRequest with async/await
-    //@MainActor
+    @MainActor
     func runUserGetRequestAsyncAwait() async {
         do {
             let (response, newUser) = try await networkGETRequest.userGetRequestAsyncAwait()
@@ -64,7 +64,7 @@ class GetAppViewModel: ObservableObject {
     }
     
     //MARK: Run UserGETRequest with @escaping and async/await
-    
+    @MainActor
     func runUserGetRequestEscapingAndAsyncAwait() async {
         do {
             let (response, newUser) = try await networkGETRequest.userRequestEscapingAndAsyncAwait()
@@ -93,6 +93,7 @@ class GetAppViewModel: ObservableObject {
     }
     
     //MARK: Run PageGetRequest with async/await
+    @MainActor
     func runPageGetRequestAsyncAwait() async {
         
         do {
@@ -106,6 +107,7 @@ class GetAppViewModel: ObservableObject {
     }
     
     //MARK: Run PageGetRequest with @escaping and async/await
+    @MainActor
     func runPageGetRequestEscapingAndAsyncAwait() async {
         do {
             let (response, newPage) = try await networkGETRequest.pageGetRequestEscapingAndAsyncAwait()
@@ -118,6 +120,7 @@ class GetAppViewModel: ObservableObject {
     }
     
     //MARK: Run Users Get Request with LocalHost
+    @MainActor
     func runUsersGetRequestAsyncAwaitLocal() async {
         do {
             let (response, newUsers) = try await networkGETRequest.usersGetRequestAsyncAwaitLocal()

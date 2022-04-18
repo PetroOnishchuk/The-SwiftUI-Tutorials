@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-@MainActor
+//@MainActor
 class PostRequestViewModel: ObservableObject {
     
     
@@ -47,7 +47,7 @@ class PostRequestViewModel: ObservableObject {
     }
     
     //MARK: Run UserPOSTRequest and async/await
-    
+    @MainActor
     func runUserPOSTRequestAsyncAwait() async {
         do {
             let (response, newUser) = try await networkPOSTRequest.userPOSTRequestAsyncAwait(userForm: makeFormUserRequest())
@@ -61,7 +61,7 @@ class PostRequestViewModel: ObservableObject {
     
     
     //MARK: Run UserPOSTRequestEscapingAsyncAwait
-    
+    @MainActor
     func runUserPOSTRequestEscapingAsyncAwait() async {
         do {
             let (response, newUser) = try await networkPOSTRequest.userPOSTRequestEscapingAsyncAwait(userForm: makeFormUserRequest())
@@ -75,7 +75,7 @@ class PostRequestViewModel: ObservableObject {
     
     
     //MARK: Run UserPostRequest and LocalHost
-    
+    @MainActor
     func runUserPOSTRequestAndLocalHost() async {
         do {
             let (response, newUser) = try await networkPOSTRequest.userPOSTRequestLocalhost(userForm: makeFormUserRequest())
@@ -90,8 +90,11 @@ class PostRequestViewModel: ObservableObject {
     //MARK: Clean Users Fields
     
     func cleanUsersFields() {
-        name = ""
-        job = ""
-        mainUser = User(name: "", job: "", id: "", dateCreated: nil)
+        DispatchQueue.main.async { [weak self] in
+            self?.name = ""
+            self?.job = ""
+            self?.mainUser = User(name: "", job: "", id: "", dateCreated: nil)
+        }
+        
     }
 }
