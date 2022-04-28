@@ -177,7 +177,7 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndSwiftUIasync:await)<br />
 
-[YouTube](https://www.youtube.com/watch?v=imxzXEwUNos&list=PL3pUvT0fmHNjjoKEmLaad62wmfoLPg3Sq)<br />
+[YouTube](https://www.youtube.com/playlist?list=PL3pUvT0fmHNjtUGNjN8tBucDekgKLFATM)<br />
 
 ### 17.1 [POST Request & SwiftUI & Go(Golang) Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndSwiftUIasync:await/URLSessionAndPOSTRequestAsync:await01)
 (Using: URLSession, @escaping, async/await, REST API, GO (Golang) Local Server.)
