@@ -65,7 +65,7 @@ class NetworkRequestServices {
     
     //MARK: Make GET Request
     
-    func usersGETRequestAsyncAwaitGeneric<T: Codable>(urlType: TypeOfAppURL, returnType: T.Type) async throws -> (HTTPURLResponse, T) {
+    func usersGETRequestAsyncAwaitGeneric<T: Codable>(returnType: T.Type, urlType: TypeOfAppURL) async throws -> (HTTPURLResponse, T) {
         var tempURL: URL?
         
         do {
@@ -103,9 +103,9 @@ class NetworkRequestServices {
         
         let decoder = JSONDecoder()
         do {
-            let users = try decoder.decode(T.self, from: data)
+            let items = try decoder.decode(T.self, from: data)
             
-            return (response, users)
+            return (response, items)
         } catch (let error) {
             throw error
         }
@@ -114,7 +114,7 @@ class NetworkRequestServices {
     
     //MARK: Make POST Request
     
-    func usersPOSTRequestAsyncAwaitGeneric<T: Codable, R: Codable>(inputType: T.Type, returnType: R.Type, urlType: TypeOfAppURL, path: String) async throws -> (HTTPURLResponse, R) {
+    func usersPOSTRequestAsyncAwaitGeneric<T: Codable, R: Codable>(inputType: T.Type, returnType: R.Type, urlType: TypeOfAppURL, userForm: T, path: String) async throws -> (HTTPURLResponse, R) {
         
         var tempURL: URL?
         
@@ -128,12 +128,44 @@ class NetworkRequestServices {
             throw MyRequestError.invalidURL
         }
         
-        // MARK: URL Request
+        //MARK: URLRequest POST
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let encoder = JSONEncoder()
+        do {
+            
+            let httpBody = try encoder.encode(userForm)
+            request.httpBody = httpBody
+        } catch (let error) {
+            throw error
+        }
         
+        let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
+        
+        guard let response = response as? HTTPURLResponse else {
+            throw MyRequestError.invalidHTTPURLResponse
+        }
+        
+        let statusCode = response.statusCode
+        guard (200...299).contains(statusCode) else {
+            if let errorMessage = String(data: data, encoding: .utf8) {
+                print("Message error: \(errorMessage)")
+            }
+            throw MyRequestError.serverSideErrorWithResponse(statusCode)
+        }
+        
+        let decoder = JSONDecoder()
+        
+        do {
+            
+            let items = try decoder.decode(R.self, from: data)
+            return (response, items)
+            
+        } catch (let decodeError) {
+            throw decodeError
+        }
     }
 }
