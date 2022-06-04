@@ -82,7 +82,7 @@ struct UsersView: View {
                 }
             }
             .sheet(isPresented: $updateUser, onDismiss: nil) {
-                //UpdateUserView()
+                UpdateUserView()
             }
     }
 }

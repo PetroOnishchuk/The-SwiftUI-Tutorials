@@ -19,6 +19,7 @@
 		98C4D059284BB0DF003468CE /* UserInfoModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D058284BB0DF003468CE /* UserInfoModifier.swift */; };
 		98C4D05B284BB1E4003468CE /* SingleUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D05A284BB1E4003468CE /* SingleUserView.swift */; };
 		98C4D05D284BB8B0003468CE /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D05C284BB8B0003468CE /* NewUserView.swift */; };
+		98C4D05F284BBB74003468CE /* UpdateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D05E284BBB74003468CE /* UpdateUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		98C4D058284BB0DF003468CE /* UserInfoModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModifier.swift; sourceTree = "<group>"; };
 		98C4D05A284BB1E4003468CE /* SingleUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserView.swift; sourceTree = "<group>"; };
 		98C4D05C284BB8B0003468CE /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
+		98C4D05E284BBB74003468CE /* UpdateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				98C4D055284BAB28003468CE /* UsersView.swift */,
 				98C4D05A284BB1E4003468CE /* SingleUserView.swift */,
 				98C4D05C284BB8B0003468CE /* NewUserView.swift */,
+				98C4D05E284BBB74003468CE /* UpdateUserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				984694212848BDB500BBCA85 /* MainContentView.swift in Sources */,
+				98C4D05F284BBB74003468CE /* UpdateUserView.swift in Sources */,
 				9846941F2848BDB500BBCA85 /* URLSessionGenericAndDatabaseiOS01App.swift in Sources */,
 				98C4D05D284BB8B0003468CE /* NewUserView.swift in Sources */,
 				98B0F1D3284A610800CE00AA /* StringExtension.swift in Sources */,
