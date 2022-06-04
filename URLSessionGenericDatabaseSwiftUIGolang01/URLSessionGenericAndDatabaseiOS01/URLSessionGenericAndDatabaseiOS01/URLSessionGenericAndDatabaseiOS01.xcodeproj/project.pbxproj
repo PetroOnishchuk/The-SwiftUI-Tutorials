@@ -14,6 +14,7 @@
 		9846942F2848BE8100BBCA85 /* Page+UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846942E2848BE8100BBCA85 /* Page+UserModel.swift */; };
 		9846943528490CD600BBCA85 /* NetworkRequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846943428490CD600BBCA85 /* NetworkRequestServices.swift */; };
 		98B0F1D3284A610800CE00AA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0F1D2284A610800CE00AA /* StringExtension.swift */; };
+		98B0F1D6284A624F00CE00AA /* MyAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9846942E2848BE8100BBCA85 /* Page+UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page+UserModel.swift"; sourceTree = "<group>"; };
 		9846943428490CD600BBCA85 /* NetworkRequestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestServices.swift; sourceTree = "<group>"; };
 		98B0F1D2284A610800CE00AA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9846941E2848BDB500BBCA85 /* URLSessionGenericAndDatabaseiOS01App.swift */,
 				9846942D2848BE5C00BBCA85 /* Views */,
 				9846942C2848BE5000BBCA85 /* Model */,
+				98B0F1D4284A623000CE00AA /* ViewModel */,
 				9846943328490CA100BBCA85 /* Services */,
 				98B0F1D1284A60E800CE00AA /* Extensions */,
 				984694222848BDB700BBCA85 /* Assets.xcassets */,
@@ -106,6 +109,14 @@
 				98B0F1D2284A610800CE00AA /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		98B0F1D4284A623000CE00AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				9846941F2848BDB500BBCA85 /* URLSessionGenericAndDatabaseiOS01App.swift in Sources */,
 				98B0F1D3284A610800CE00AA /* StringExtension.swift in Sources */,
 				9846943528490CD600BBCA85 /* NetworkRequestServices.swift in Sources */,
+				98B0F1D6284A624F00CE00AA /* MyAppViewModel.swift in Sources */,
 				9846942F2848BE8100BBCA85 /* Page+UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

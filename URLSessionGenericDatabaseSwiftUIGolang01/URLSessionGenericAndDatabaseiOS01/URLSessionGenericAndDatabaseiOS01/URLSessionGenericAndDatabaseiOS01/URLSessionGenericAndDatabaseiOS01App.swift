@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct URLSessionGenericAndDatabaseiOS01App: App {
+    @StateObject var myAppVM = MyAppViewModel()
+    
     var body: some Scene {
         WindowGroup {
             MainContentView()
+                .environmentObject(myAppVM)
         }
     }
 }
