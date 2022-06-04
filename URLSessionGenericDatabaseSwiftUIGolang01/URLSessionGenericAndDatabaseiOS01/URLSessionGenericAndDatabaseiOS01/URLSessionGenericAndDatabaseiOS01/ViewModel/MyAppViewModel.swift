@@ -114,7 +114,7 @@ class MyAppViewModel: ObservableObject {
                     await runSelectMultipleUsersPOSTRequestAsyncAwaitAndGeneric()
                 case .singleSearch:
                     await runDeleteUserPOSTRequestAsyncAwaitAndGeneric(deleteUser: user)
-                    await runSelectSinglePOSTRequestAsyncAwaitAndGeneric()
+                    await runSelectSingleUserPOSTRequestAsyncAwaitAndGeneric()
                 case .off:
                     await runDeleteUserPOSTRequestAsyncAwaitAndGeneric(deleteUser: user)
                     await runAllUsersGETRequestAsyncAwaitGenericLocalHost()
@@ -159,7 +159,7 @@ class MyAppViewModel: ObservableObject {
     
     //MARK: Run SELECT Single User with LocalHost
     @MainActor
-    func runSelectSinglePOSTRequestAsyncAwaitAndGeneric() async {
+    func runSelectSingleUserPOSTRequestAsyncAwaitAndGeneric() async {
         do {
             let newUser  = createNewUser()
             let (response, singleUser) = try await NetworkRequestServices.shared.usersPOSTRequestAsyncAwaitGeneric(inputType: User.self, returnType: User.self, urlType: .postRequestLocalhostAPI, userForm: newUser, path: "selectSingle")

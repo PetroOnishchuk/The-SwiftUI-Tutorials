@@ -15,6 +15,10 @@
 		9846943528490CD600BBCA85 /* NetworkRequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9846943428490CD600BBCA85 /* NetworkRequestServices.swift */; };
 		98B0F1D3284A610800CE00AA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0F1D2284A610800CE00AA /* StringExtension.swift */; };
 		98B0F1D6284A624F00CE00AA /* MyAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */; };
+		98C4D056284BAB28003468CE /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D055284BAB28003468CE /* UsersView.swift */; };
+		98C4D059284BB0DF003468CE /* UserInfoModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D058284BB0DF003468CE /* UserInfoModifier.swift */; };
+		98C4D05B284BB1E4003468CE /* SingleUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D05A284BB1E4003468CE /* SingleUserView.swift */; };
+		98C4D05D284BB8B0003468CE /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D05C284BB8B0003468CE /* NewUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		9846943428490CD600BBCA85 /* NetworkRequestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestServices.swift; sourceTree = "<group>"; };
 		98B0F1D2284A610800CE00AA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppViewModel.swift; sourceTree = "<group>"; };
+		98C4D055284BAB28003468CE /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		98C4D058284BB0DF003468CE /* UserInfoModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModifier.swift; sourceTree = "<group>"; };
+		98C4D05A284BB1E4003468CE /* SingleUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserView.swift; sourceTree = "<group>"; };
+		98C4D05C284BB8B0003468CE /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 			children = (
 				9846941E2848BDB500BBCA85 /* URLSessionGenericAndDatabaseiOS01App.swift */,
 				9846942D2848BE5C00BBCA85 /* Views */,
+				98C4D057284BB09A003468CE /* ViewModifiers */,
 				9846942C2848BE5000BBCA85 /* Model */,
 				98B0F1D4284A623000CE00AA /* ViewModel */,
 				9846943328490CA100BBCA85 /* Services */,
@@ -91,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				984694202848BDB500BBCA85 /* MainContentView.swift */,
+				98C4D055284BAB28003468CE /* UsersView.swift */,
+				98C4D05A284BB1E4003468CE /* SingleUserView.swift */,
+				98C4D05C284BB8B0003468CE /* NewUserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +129,14 @@
 				98B0F1D5284A624F00CE00AA /* MyAppViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98C4D057284BB09A003468CE /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				98C4D058284BB0DF003468CE /* UserInfoModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +211,13 @@
 			files = (
 				984694212848BDB500BBCA85 /* MainContentView.swift in Sources */,
 				9846941F2848BDB500BBCA85 /* URLSessionGenericAndDatabaseiOS01App.swift in Sources */,
+				98C4D05D284BB8B0003468CE /* NewUserView.swift in Sources */,
 				98B0F1D3284A610800CE00AA /* StringExtension.swift in Sources */,
+				98C4D059284BB0DF003468CE /* UserInfoModifier.swift in Sources */,
 				9846943528490CD600BBCA85 /* NetworkRequestServices.swift in Sources */,
 				98B0F1D6284A624F00CE00AA /* MyAppViewModel.swift in Sources */,
+				98C4D056284BAB28003468CE /* UsersView.swift in Sources */,
+				98C4D05B284BB1E4003468CE /* SingleUserView.swift in Sources */,
 				9846942F2848BE8100BBCA85 /* Page+UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

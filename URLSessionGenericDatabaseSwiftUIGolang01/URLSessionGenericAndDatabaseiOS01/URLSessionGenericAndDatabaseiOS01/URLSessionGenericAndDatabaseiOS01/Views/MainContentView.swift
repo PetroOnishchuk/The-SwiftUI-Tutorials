@@ -9,8 +9,21 @@ import SwiftUI
 
 struct MainContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Form {
+                NavigationLink {
+                    //UsersView()
+                } label: {
+                    Text("Users GET & POST Request & LocalHost")
+                }
+                NavigationLink {
+                    //PAGEView()
+                } label: {
+                    Text("Page GET Request & REQRES API")
+                }
+            }.navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("GET & POST Request & Database")
+        }
     }
 }
 
