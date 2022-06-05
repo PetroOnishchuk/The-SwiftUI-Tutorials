@@ -37,6 +37,12 @@ struct PageView: View {
                 Text("Page Info Section")
             }
             Section {
+                Text("Text: \(myAppVM.mainPage.support.text)")
+                Text("URL: \(myAppVM.mainPage.support.url)")
+            } header: {
+                Text("Support Section")
+            }
+            Section {
                 ForEach(myAppVM.mainPage.allUsers) {
                      user in
                     SingleUserView(user: user)
