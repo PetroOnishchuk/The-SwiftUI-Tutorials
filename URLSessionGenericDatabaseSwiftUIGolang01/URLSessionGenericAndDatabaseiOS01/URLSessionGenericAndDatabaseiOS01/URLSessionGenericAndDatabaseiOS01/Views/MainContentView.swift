@@ -5,19 +5,19 @@
 //  Created by Petro Onishchuk on 6/2/22.
 //
 
-import SwiftUI
+import SwiftUI 
 
 struct MainContentView: View {
     var body: some View {
         NavigationView {
             Form {
                 NavigationLink {
-                    //UsersView()
+                    UsersView()
                 } label: {
                     Text("Users GET & POST Request & LocalHost")
                 }
                 NavigationLink {
-                    //PAGEView()
+                   PageView()
                 } label: {
                     Text("Page GET Request & REQRES API")
                 }

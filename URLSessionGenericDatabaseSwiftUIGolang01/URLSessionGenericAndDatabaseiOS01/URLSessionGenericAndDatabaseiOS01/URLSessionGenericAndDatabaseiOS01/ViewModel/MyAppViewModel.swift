@@ -175,6 +175,7 @@ class MyAppViewModel: ObservableObject {
     }
     
     //MARK: Run SELECT multiple users Localhost
+    @MainActor
     func runSelectMultipleUsersPOSTRequestAsyncAwaitAndGeneric() async {
         do {
             let newUser = createNewUser()
