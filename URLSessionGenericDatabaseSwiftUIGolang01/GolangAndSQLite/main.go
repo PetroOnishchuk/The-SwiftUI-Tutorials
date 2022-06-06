@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello SQLite Databese")
+	fmt.Println("SQLite Database")
 }
