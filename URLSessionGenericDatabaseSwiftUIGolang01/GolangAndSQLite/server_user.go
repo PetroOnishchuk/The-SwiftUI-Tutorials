@@ -117,3 +117,104 @@ func selectSingleUserPOSTRequest(write http.ResponseWriter, request *http.Reques
 }
 
 // INSERT NEW User
+func insertNewUserPOSTRequest(write http.ResponseWriter, request *http.Request) {
+	switch request.Method {
+	case "POST":
+		write.Header().Set("Content-Type", "applicaion/json")
+
+		var newUser User
+		newDec := json.NewDecoder(request.Body)
+		decErr := newDec.Decode(&newUser)
+
+		if decErr != nil {
+			http.Error(write, decErr.Error(), http.StatusBadRequest)
+			return
+		}
+
+		id, err := insertNewUsersRow(newUser)
+
+		if err != nil {
+			http.Error(write, err.Error(), http.StatusBadRequest)
+			return
+		}
+
+		newEncoder := json.NewEncoder(write)
+		encodeErr := newEncoder.Encode(id)
+
+		if encodeErr != nil {
+			http.Error(write, encodeErr.Error(), http.StatusBadRequest)
+			return
+		}
+		fmt.Printf("Create New User with ID: %v\n", id)
+
+	}
+}
+
+//UPDATE ROW User
+func updateUserPOSTRequest(write http.ResponseWriter, request *http.Request) {
+	switch request.Method {
+	case "POST":
+		write.Header().Set("Content-Type", "applicaion/json")
+
+		var updateUser User
+
+		newDec := json.NewDecoder(request.Body)
+		decErr := newDec.Decode(&updateUser)
+
+		if decErr != nil {
+			http.Error(write, decErr.Error(), http.StatusBadRequest)
+			return
+		}
+
+		result, err := updateUsersRow(updateUser)
+		if err != nil {
+			http.Error(write, err.Error(), http.StatusBadRequest)
+			return
+		}
+		newEncoder := json.NewEncoder(write)
+		encodeErr := newEncoder.Encode(result)
+
+		if encodeErr != nil {
+			http.Error(write, encodeErr.Error(), http.StatusBadRequest)
+			return
+		}
+
+		fmt.Printf("Rows Update: #%v\n", result)
+	}
+
+}
+
+//DELETE User
+func deleteUserPOSTRequest(write http.ResponseWriter, request *http.Request) {
+	switch request.Method {
+	case "POST":
+		write.Header().Set("Content-Type", "applicaion/json")
+
+		var deleteUser User
+
+		newDec := json.NewDecoder(request.Body)
+		decErr := newDec.Decode(&deleteUser)
+
+		if decErr != nil {
+			http.Error(write, decErr.Error(), http.StatusBadRequest)
+			return
+		}
+
+		result, err := deleteUsersRow(deleteUser)
+
+		if err != nil {
+			http.Error(write, err.Error(), http.StatusBadRequest)
+			return
+		}
+
+		newEncoder := json.NewEncoder(write)
+		encodeErr := newEncoder.Encode(result)
+
+		if encodeErr != nil {
+			http.Error(write, encodeErr.Error(), http.StatusBadRequest)
+			return
+		}
+
+		fmt.Printf("User deleted: #%v\n", result)
+	}
+}
