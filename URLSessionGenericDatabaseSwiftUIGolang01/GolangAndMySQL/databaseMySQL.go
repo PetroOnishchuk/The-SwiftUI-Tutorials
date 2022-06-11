@@ -3,7 +3,9 @@ package main
 import (
 	"database/sql"
 	"fmt"
+	"io/ioutil"
 	"os"
+	"strings"
 
 	"github.com/go-sql-driver/mysql"
 	_ "github.com/go-sql-driver/mysql"
@@ -37,4 +39,26 @@ func openDatabase() (err error) {
 	DB = db
 	return nil
 
+}
+
+// Execute users.sql file
+func execSqlFile() (err error) {
+	file, err := ioutil.ReadFile("users.sql")
+
+	if err != nil {
+		return err
+	}
+
+	requests := strings.Split(string(file), ";")
+
+	for _, request := range requests {
+		fmt.Printf("REQUEST %v\n", request)
+
+		_, err := DB.Exec(request)
+		if err != nil {
+			return err
+		}
+
+	}
+	return nil
 }
