@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS Users (
     First_name varchar(255),
     Last_name varchar(255),
     Email varchar(255),
-    Avatar varchar(255),
+    Avatar varchar(255)
 );
 
 INSERT INTO Users(First_name, Last_name, Email, Avatar) VALUES
