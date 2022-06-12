@@ -181,3 +181,82 @@ func insertNewUsersRow(newUser User) (id int64, err error) {
 }
 
 // UPDATE Users Row
+func updateUsersRow(updatingUser User) (int64, error) {
+	tx, err := DB.Begin()
+	if err != nil {
+		return 0, err
+	}
+
+	stmt, err := tx.Prepare("UPDATE Users SET first_name = ?, last_name = ?, email = ?, avatar = ? WHERE id = ?")
+
+	if err != nil {
+		return 0, err
+	}
+
+	defer stmt.Close()
+
+	res, err := stmt.Exec(updatingUser.First_name, updatingUser.Last_name, updatingUser.Email, updatingUser.Avatar, updatingUser.Id)
+
+	if err != nil {
+		tx.Rollback()
+		return 0, err
+	}
+
+	rowAfected, err := res.RowsAffected()
+
+	if err != nil {
+		tx.Rollback()
+		return 0, err
+	} else if rowAfected == 0 {
+		tx.Rollback()
+		return 0, errors.New("no Row Afected while Update Row")
+	}
+	commitErr := tx.Commit()
+	if commitErr != nil {
+		return rowAfected, commitErr
+	} else {
+		return rowAfected, nil
+	}
+
+}
+
+// DELETE Users Row
+func deleteUsersRow(deletingUser User) (int64, error) {
+
+	tx, err := DB.Begin()
+	if err != nil {
+		return 0, err
+	}
+
+	stmt, err := tx.Prepare("DELETE FROM Users WHERE id = ?")
+	if err != nil {
+		return 0, err
+	}
+
+	defer stmt.Close()
+
+	res, err := stmt.Exec(deletingUser.Id)
+
+	if err != nil {
+		tx.Rollback()
+		return 0, err
+	}
+
+	rowAfected, err := res.RowsAffected()
+
+	if rowAfected == 0 {
+		return 0, errors.New("no Row Afected Error")
+	}
+
+	if err != nil {
+		return 0, err
+	}
+
+	commitErr := tx.Commit()
+	if commitErr != nil {
+		return rowAfected, commitErr
+	} else {
+		return rowAfected, nil
+	}
+
+}
