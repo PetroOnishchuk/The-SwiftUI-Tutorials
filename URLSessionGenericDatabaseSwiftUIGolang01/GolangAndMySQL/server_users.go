@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"net/http"
 )
 
@@ -10,6 +11,7 @@ import (
 func selectAllUsersRequest(writer http.ResponseWriter, request *http.Request) {
 	switch request.Method {
 	case "GET":
+
 		var allSelectedUsers = []User{}
 
 		reqFormValue := request.FormValue("users")
@@ -19,6 +21,7 @@ func selectAllUsersRequest(writer http.ResponseWriter, request *http.Request) {
 		}
 		switch reqFormValue {
 		case "all":
+
 			writer.Header().Set("Content-Type", "application/json")
 			err := queryDatabaseUsers(&allSelectedUsers)
 			if err != nil {
@@ -118,6 +121,7 @@ func insertNewUserPOSTRequest(writer http.ResponseWriter, request *http.Request)
 
 		newDecoder := json.NewDecoder(request.Body)
 		decodeErr := newDecoder.Decode(&newUser)
+		fmt.Printf("NEW USER %v", newUser)
 		if decodeErr != nil {
 			http.Error(writer, decodeErr.Error(), http.StatusBadRequest)
 			return
