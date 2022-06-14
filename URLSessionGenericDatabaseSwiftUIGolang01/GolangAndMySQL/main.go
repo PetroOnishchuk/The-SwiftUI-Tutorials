@@ -24,7 +24,7 @@ func main() {
 	}
 
 	// SELECT ALL User Rows
-	http.HandleFunc("/users", selectAllUsersRequest)
+	http.HandleFunc("/users/", selectAllUsersRequest)
 
 	// SELECT COUPLE Users Rows
 	http.HandleFunc("/select", selectUsersPOSTRequest)
@@ -33,7 +33,7 @@ func main() {
 	http.HandleFunc("/selectSingle", selectSingleUserPOSTRequest)
 
 	// INSERT NEW Users Row
-	http.HandleFunc("newUser", insertNewUserPOSTRequest)
+	http.HandleFunc("/newUser", insertNewUserPOSTRequest)
 
 	// UPDATE Users Row
 	http.HandleFunc("/update", updateUserPOSTRequest)

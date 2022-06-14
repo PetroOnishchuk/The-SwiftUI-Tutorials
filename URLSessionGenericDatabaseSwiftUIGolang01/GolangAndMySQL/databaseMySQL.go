@@ -133,7 +133,7 @@ func selectSingleUsersRow(searchUser User) (User, error) {
 		return selectedUser, err
 	}
 
-	mySQLErr := stmt.QueryRow(searchUser.Id, searchUser.First_name).Scan(&selectedUser.Id, &searchUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
+	mySQLErr := stmt.QueryRow(searchUser.Id, searchUser.First_name).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
 
 	if mySQLErr != nil {
 		if mySQLErr == sql.ErrNoRows {
