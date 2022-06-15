@@ -21,7 +21,7 @@ const (
 func openDatabase() (err error) {
 	psqlconn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 
-	db, err := sql.Open("postres", psqlconn)
+	db, err := sql.Open("postgres", psqlconn)
 	if err != nil {
 		fmt.Printf("Error Open Database %n\n", err)
 		return err
