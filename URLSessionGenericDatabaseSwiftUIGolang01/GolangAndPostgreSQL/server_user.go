@@ -75,7 +75,7 @@ func selectMultipleUsersPOSTRequest(writer http.ResponseWriter, request *http.Re
 	}
 }
 
-// SELECT Single User
+// SELECT Single Users Row
 func selectSingleUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 	switch request.Method {
 	case "POST":
@@ -108,7 +108,7 @@ func selectSingleUserPOSTRequest(writer http.ResponseWriter, request *http.Reque
 	}
 }
 
-// INSERT New User
+// INSERT New Users Row
 func insertNewUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 	switch request.Method {
 	case "POST":
@@ -140,7 +140,7 @@ func insertNewUserPOSTRequest(writer http.ResponseWriter, request *http.Request)
 	}
 }
 
-// UPDATE User
+// UPDATE Users Row
 func updateUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 	switch request.Method {
 	case "POST":
@@ -174,7 +174,7 @@ func updateUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 	}
 }
 
-// DELETE User
+// DELETE Users Row
 func deleteUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 	switch request.Method {
 	case "POST":
