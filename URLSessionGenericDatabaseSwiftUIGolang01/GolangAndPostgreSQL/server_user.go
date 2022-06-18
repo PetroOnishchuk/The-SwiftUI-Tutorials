@@ -117,7 +117,7 @@ func insertNewUserPOSTRequest(writer http.ResponseWriter, request *http.Request)
 		var newUser User
 
 		newDecoder := json.NewDecoder(request.Body)
-		decodeErr := newDecoder.Decode(newUser)
+		decodeErr := newDecoder.Decode(&newUser)
 
 		if decodeErr != nil {
 			http.Error(writer, decodeErr.Error(), http.StatusBadRequest)
@@ -149,7 +149,7 @@ func updateUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 		var updatingUser User
 
 		newDecoder := json.NewDecoder(request.Body)
-		decodeErr := newDecoder.Decode(updatingUser)
+		decodeErr := newDecoder.Decode(&updatingUser)
 
 		if decodeErr != nil {
 			http.Error(writer, decodeErr.Error(), http.StatusBadRequest)
@@ -183,7 +183,7 @@ func deleteUserPOSTRequest(writer http.ResponseWriter, request *http.Request) {
 		var deletingUser User
 
 		newDecoder := json.NewDecoder(request.Body)
-		decodeErr := newDecoder.Decode(deletingUser)
+		decodeErr := newDecoder.Decode(&deletingUser)
 
 		if decodeErr != nil {
 			http.Error(writer, decodeErr.Error(), http.StatusBadRequest)

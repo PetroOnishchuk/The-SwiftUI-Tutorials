@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS Users (
 
 INSERT INTO Users(First_name, Last_name, Email, Avatar) VALUES
 ('ron', 'PostgreSQL', 'testemailt@icloud.com', ':)' ),
-('rona', 'PosygreSQL', 'testemail@gmail.com', ':)'),
+('rona', 'PostgreSQL', 'testemail@gmail.com', ':)'),
 ('tom', 'PostgreSQL', 'testemailt@yahoo.com', ':)');
