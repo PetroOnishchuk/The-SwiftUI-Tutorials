@@ -144,6 +144,36 @@ func selectSingleUsersRow(searchUser User) (User, error) {
 	return selectedUser, nil
 }
 
+// SELECT Single Users Row ID Name
+func selectingSingleUsersRowIdName(searchUser User) (User, error) {
+	selectedUser := User{}
+	stmtId, errId := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE id = ?")
+	if errId != nil {
+		return selectedUser, errId
+	}
+	stmtName, errName := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE id = ?")
+	if errName != nil {
+		return selectedUser, errId
+	}
+
+	mySQLErrId := stmtId.QueryRow(searchUser.Id).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
+
+	if mySQLErrId != nil {
+		if mySQLErrId == sql.ErrNoRows {
+			mySQLErrName := stmtName.QueryRow(searchUser.First_name).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Email, &selectedUser.Avatar)
+			if mySQLErrName != nil {
+				if mySQLErrName == sql.ErrNoRows {
+					return selectedUser, nil
+				}
+				return selectedUser, mySQLErrName
+			}
+			return selectedUser, nil
+		}
+		return selectedUser, mySQLErrId
+	}
+	return selectedUser, nil
+}
+
 // INSERT New Users Row
 func insertNewUsersRow(newUser User) (id int64, err error) {
 	tx, err := DB.Begin()
