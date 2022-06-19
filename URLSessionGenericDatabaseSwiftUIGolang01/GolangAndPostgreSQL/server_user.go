@@ -90,16 +90,18 @@ func selectSingleUserPOSTRequest(writer http.ResponseWriter, request *http.Reque
 			http.Error(writer, decodeErr.Error(), http.StatusBadRequest)
 			return
 		}
+		//V.1
+		//selectedUser, err := selectSingleUsersRow(searchUser)
 
-		selectedUser, err := selectSingleUsersRow(searchUser)
-
+		// V.2
+		selectedUserIdName, err := selectSingleUsersRowIdName(searchUser)
 		if err != nil {
 			http.Error(writer, err.Error(), http.StatusBadRequest)
 			return
 		}
 
 		newEncoder := json.NewEncoder(writer)
-		encoderErr := newEncoder.Encode(selectedUser)
+		encoderErr := newEncoder.Encode(selectedUserIdName)
 
 		if encoderErr != nil {
 			http.Error(writer, encoderErr.Error(), http.StatusBadRequest)
