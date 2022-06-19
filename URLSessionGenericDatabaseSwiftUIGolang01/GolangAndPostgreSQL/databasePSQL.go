@@ -89,7 +89,7 @@ func selectUsersRows(ctx context.Context, searchUser User, allSelectedUsers *[]U
 
 	tx, err := DB.BeginTx(ctx, nil)
 	if err != nil {
-		return nil
+		return err
 	}
 
 	rows, err := tx.QueryContext(ctx, "SELECT id, first_name, last_name, email, avatar FROM Users WHERE id = $1 OR first_name = $2", searchUser.Id, searchUser.First_name)
@@ -133,9 +133,41 @@ func selectSingleUsersRow(searchUser User) (User, error) {
 
 	if mySQLErr != nil {
 		if mySQLErr == sql.ErrNoRows {
-			return selectedUser, errors.New("no Rows Error")
+			return selectedUser, nil
 		}
 		return selectedUser, mySQLErr
+	}
+	return selectedUser, nil
+}
+
+// SELECT Single Users Row Id Name
+func selectSingleUsersRowIdName(searchUser User) (User, error) {
+	selectedUser := User{}
+	stmtId, errId := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE id = $1")
+	if errId != nil {
+		return selectedUser, errId
+	}
+
+	stmtName, errName := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE name = $1")
+	if errName != nil {
+		return selectedUser, errName
+	}
+
+	mySQLErrId := stmtId.QueryRow(searchUser.Id).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
+
+	if mySQLErrId != nil {
+		if mySQLErrId == sql.ErrNoRows {
+
+			mySQLErrName := stmtName.QueryRow(searchUser.First_name).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
+			if mySQLErrName != nil {
+				if mySQLErrName == sql.ErrNoRows {
+					return selectedUser, nil
+				}
+				return selectedUser, mySQLErrName
+			}
+			return selectedUser, nil
+		}
+		return selectedUser, mySQLErrId
 	}
 	return selectedUser, nil
 }
