@@ -151,7 +151,7 @@ func selectingSingleUsersRowIdName(searchUser User) (User, error) {
 	if errId != nil {
 		return selectedUser, errId
 	}
-	stmtName, errName := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE id = ?")
+	stmtName, errName := DB.Prepare("SELECT id, first_name, last_name, email, avatar FROM Users WHERE first_name = ?")
 	if errName != nil {
 		return selectedUser, errId
 	}

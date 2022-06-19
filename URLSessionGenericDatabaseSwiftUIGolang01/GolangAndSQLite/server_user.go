@@ -97,16 +97,21 @@ func selectSingleUserPOSTRequest(write http.ResponseWriter, request *http.Reques
 			http.Error(write, decErr.Error(), http.StatusBadRequest)
 			return
 		}
+		// V.1
+		//foundUser, err := selectSingleUsersRow(newUser)
+		// V.2
+		foundUserIdName, err := selectSingleUsersRowIdName(newUser)
 
-		foundUser, err := selectSingleUsersRow(newUser)
 		if err != nil {
 			http.Error(write, err.Error(), http.StatusBadRequest)
 			return
 		}
 
 		newEncoder := json.NewEncoder(write)
-
-		encodeErr := newEncoder.Encode(foundUser)
+		// V.1
+		//	encodeErr := newEncoder.Encode(foundUser)
+		// V.2
+		encodeErr := newEncoder.Encode(foundUserIdName)
 
 		if encodeErr != nil {
 			http.Error(write, encodeErr.Error(), http.StatusBadRequest)

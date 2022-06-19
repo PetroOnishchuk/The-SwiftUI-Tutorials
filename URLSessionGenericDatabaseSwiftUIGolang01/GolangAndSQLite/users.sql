@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS Users (
 
 
 INSERT INTO Users (First_name, Last_name, Email, Avatar) VALUES 
-("ron", "dn", "testemailt@icloud.com", ":)" ),
-("rona", "ql", "testemail@gmail.com", ":)"),
-("tom", "mt", "testemailt@yahoo.com", ":)");
+("ron", "sqlite", "testemailt@icloud.com", ":)" ),
+("rona", "sqlite", "testemail@gmail.com", ":)"),
+("tom", "sqlite", "testemailt@yahoo.com", ":)");
