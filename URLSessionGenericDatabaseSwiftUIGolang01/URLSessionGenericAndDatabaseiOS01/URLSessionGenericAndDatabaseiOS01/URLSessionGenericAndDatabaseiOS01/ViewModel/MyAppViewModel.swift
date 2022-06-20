@@ -163,8 +163,12 @@ class MyAppViewModel: ObservableObject {
         do {
             let newUser  = createNewUser()
             let (response, singleUser) = try await NetworkRequestServices.shared.usersPOSTRequestAsyncAwaitGeneric(inputType: User.self, returnType: User.self, urlType: .postRequestLocalhostAPI, userForm: newUser, path: "selectSingle")
-            allUsers = []
-            allUsers.append(singleUser)
+            if singleUser.id == 0 {
+                allUsers = []
+            } else {
+                allUsers = []
+                allUsers.append(singleUser)
+            }
             
             print("Response Status Code \(response.statusCode)")
             

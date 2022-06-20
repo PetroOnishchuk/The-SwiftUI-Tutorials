@@ -160,7 +160,8 @@ func selectingSingleUsersRowIdName(searchUser User) (User, error) {
 
 	if mySQLErrId != nil {
 		if mySQLErrId == sql.ErrNoRows {
-			mySQLErrName := stmtName.QueryRow(searchUser.First_name).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Email, &selectedUser.Avatar)
+
+			mySQLErrName := stmtName.QueryRow(searchUser.First_name).Scan(&selectedUser.Id, &selectedUser.First_name, &selectedUser.Last_name, &selectedUser.Email, &selectedUser.Avatar)
 			if mySQLErrName != nil {
 				if mySQLErrName == sql.ErrNoRows {
 					return selectedUser, nil
