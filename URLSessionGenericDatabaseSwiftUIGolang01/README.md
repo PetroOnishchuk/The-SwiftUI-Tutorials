@@ -44,4 +44,4 @@ postgres=# create database UserPostgreSQL;
 go get -u github.com/lib/pq  
 
  
-![visitors](https://visitor-badge.glitch.me/badge?page_id=petroonishchuk)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=petroonishchuk.URLSessionGenericDatabaseSwiftUIGolang01)
