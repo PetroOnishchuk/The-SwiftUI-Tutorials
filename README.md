@@ -240,4 +240,4 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 [YouTube](https://youtu.be/srJjGBEHPQM ) 
 
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=petroonishchuk)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=petroonishchuk.The-SwiftUI-Tutorials)
