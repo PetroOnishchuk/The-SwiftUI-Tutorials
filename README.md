@@ -203,3 +203,38 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionAndSwiftUIasync:await/HTTPServerAndGo01)<br />
 
 [YouTube](https://youtu.be/varAF3c1BOI)<br />
+
+## 17. [SwiftUI & Go (Golang) & Local Server & SQLite, MySQL, PostgreSQL](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01)
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01)<br />
+
+[YouTube](https://www.youtube.com/playlist?list=PL3pUvT0fmHNj5M3EkRXJV1Iy55T2Kaq7G)  
+
+### 17.1 [SwiftUI & Go(Golang) Server & SQLite, MySQL, PostgreSQL](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01)  
+  
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01)  
+
+[YouTube](https://youtu.be/r36N7LRO_kI)  
+
+
+### 17.2 [ Go(Golang) Server & SwiftUI & SQLite](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndSQLite)
+         
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndSQLite)  
+
+[YouTube](https://youtu.be/srJjGBEHPQM )  
+
+
+### 17.3 [ Go(Golang) Server & SwiftUI & MySQL](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndMySQL)
+         
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndMySQL)  
+
+[YouTube](https://youtu.be/srJjGBEHPQM )  
+
+### 17.4 [ Go(Golang) Server & SwiftUI & PostgreSQL](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndPostgreSQL)
+         
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01/GolangAndPostgreSQL)  
+
+[YouTube](https://youtu.be/srJjGBEHPQM ) 
