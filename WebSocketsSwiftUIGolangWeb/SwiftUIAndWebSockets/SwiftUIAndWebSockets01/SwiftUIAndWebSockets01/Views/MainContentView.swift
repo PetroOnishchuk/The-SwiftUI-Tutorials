@@ -16,6 +16,11 @@ struct MainContentView: View {
                 } label: {
                     Text("PiesocketView")
                 }
+                NavigationLink {
+                    GOWebSocketView()
+                } label: {
+                 Text("GOWebSocketView")
+                }
             }.navigationTitle("SwiftUI & WebSockets")
                 .navigationBarTitleDisplayMode(.inline)
             

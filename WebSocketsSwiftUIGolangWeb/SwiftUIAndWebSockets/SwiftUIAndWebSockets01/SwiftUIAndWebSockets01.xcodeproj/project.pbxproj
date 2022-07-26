@@ -14,6 +14,8 @@
 		98ACE8B7288EF1C600357D9F /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ACE8B6288EF1C600357D9F /* MessageModel.swift */; };
 		98ACE8BA288EF55200357D9F /* PiesocketVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ACE8B9288EF55200357D9F /* PiesocketVM.swift */; };
 		98ACE8BC288EFBC600357D9F /* PiesocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ACE8BB288EFBC600357D9F /* PiesocketView.swift */; };
+		98D0BCDC28903BA4001C082D /* GOWebSocketsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BCDB28903BA4001C082D /* GOWebSocketsVM.swift */; };
+		98D0BCDE2890451D001C082D /* GOWebSocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BCDD2890451D001C082D /* GOWebSocketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		98ACE8B6288EF1C600357D9F /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		98ACE8B9288EF55200357D9F /* PiesocketVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiesocketVM.swift; sourceTree = "<group>"; };
 		98ACE8BB288EFBC600357D9F /* PiesocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiesocketView.swift; sourceTree = "<group>"; };
+		98D0BCDB28903BA4001C082D /* GOWebSocketsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOWebSocketsVM.swift; sourceTree = "<group>"; };
+		98D0BCDD2890451D001C082D /* GOWebSocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOWebSocketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				98ACE8A8288EF13200357D9F /* MainContentView.swift */,
 				98ACE8BB288EFBC600357D9F /* PiesocketView.swift */,
+				98D0BCDD2890451D001C082D /* GOWebSocketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				98ACE8B9288EF55200357D9F /* PiesocketVM.swift */,
+				98D0BCDB28903BA4001C082D /* GOWebSocketsVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			files = (
 				98ACE8A9288EF13200357D9F /* MainContentView.swift in Sources */,
 				98ACE8B7288EF1C600357D9F /* MessageModel.swift in Sources */,
+				98D0BCDC28903BA4001C082D /* GOWebSocketsVM.swift in Sources */,
 				98ACE8BA288EF55200357D9F /* PiesocketVM.swift in Sources */,
 				98ACE8A7288EF13200357D9F /* SwiftUIAndWebSockets01App.swift in Sources */,
+				98D0BCDE2890451D001C082D /* GOWebSocketView.swift in Sources */,
 				98ACE8BC288EFBC600357D9F /* PiesocketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
