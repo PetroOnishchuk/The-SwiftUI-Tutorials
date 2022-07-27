@@ -10,8 +10,7 @@ type Message struct {
 }
 
 type Client struct {
-	Message       chan Message
-	Conn          *websocket.Conn
-	RegistrClient chan bool
-	CloseConn     chan bool
+	Message   chan Message
+	Conn      *websocket.Conn
+	CloseConn chan bool
 }
