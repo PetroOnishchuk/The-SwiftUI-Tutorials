@@ -7,8 +7,11 @@ import (
 
 func main() {
 	fmt.Printf("Hello, WebSocket Server!\n")
+	// Simple WS Server
+	//http.HandleFunc("/", serverSimpleWS)
 
-	http.HandleFunc("/", serverSimpleWS)
+	// Complex WS Server
+	http.HandleFunc("/", serveComplexWS)
 
 	serverErr := http.ListenAndServe(":5000", nil)
 
