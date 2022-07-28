@@ -42,6 +42,7 @@ func (pool *Pool) StartWrite() {
 	for {
 		select {
 		case client := <-pool.Register:
+			pool.Clients[client] = true
 			log.Printf("Size of Connection Pool: %v", len(pool.Clients))
 			newClientID := client.ID
 			for client, _ := range pool.Clients {
@@ -68,7 +69,7 @@ func (pool *Pool) StartWrite() {
 			}
 		case message := <-pool.Broadcast:
 			log.Printf("Sending message to all clients in Pool\n")
-			for client, _ := range pool.Clients {
+			for client := range pool.Clients {
 				time.Sleep(1 * time.Second)
 
 				wrErr := client.Conn.WriteJSON(message)
