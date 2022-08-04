@@ -18,6 +18,9 @@
 		98A234A1289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234A0289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift */; };
 		98A234B1289BD8170092E15C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B0289BD8170092E15C /* MessageViewController.swift */; };
 		98A234B4289BE65A0092E15C /* MessageAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B3289BE65A0092E15C /* MessageAppModel.swift */; };
+		98A234B6289BE6E20092E15C /* SetupTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B5289BE6E20092E15C /* SetupTableViewExtension.swift */; };
+		98A234B8289BED170092E15C /* SetupAlertsExtebsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B7289BED170092E15C /* SetupAlertsExtebsions.swift */; };
+		98A234BA289BEDB10092E15C /* SetupWebSocketExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B9289BEDB10092E15C /* SetupWebSocketExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		98A234A0289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndWebSocketsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98A234B0289BD8170092E15C /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		98A234B3289BE65A0092E15C /* MessageAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAppModel.swift; sourceTree = "<group>"; };
+		98A234B5289BE6E20092E15C /* SetupTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTableViewExtension.swift; sourceTree = "<group>"; };
+		98A234B7289BED170092E15C /* SetupAlertsExtebsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupAlertsExtebsions.swift; sourceTree = "<group>"; };
+		98A234B9289BEDB10092E15C /* SetupWebSocketExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupWebSocketExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				98A234B0289BD8170092E15C /* MessageViewController.swift */,
+				98A234B5289BE6E20092E15C /* SetupTableViewExtension.swift */,
+				98A234B7289BED170092E15C /* SetupAlertsExtebsions.swift */,
+				98A234B9289BEDB10092E15C /* SetupWebSocketExtension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -280,11 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A234B8289BED170092E15C /* SetupAlertsExtebsions.swift in Sources */,
 				98A234B4289BE65A0092E15C /* MessageAppModel.swift in Sources */,
 				98A23482289BB6BC0092E15C /* ViewController.swift in Sources */,
 				98A2347E289BB6BC0092E15C /* AppDelegate.swift in Sources */,
 				98A234B1289BD8170092E15C /* MessageViewController.swift in Sources */,
+				98A234BA289BEDB10092E15C /* SetupWebSocketExtension.swift in Sources */,
 				98A23480289BB6BC0092E15C /* SceneDelegate.swift in Sources */,
+				98A234B6289BE6E20092E15C /* SetupTableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
