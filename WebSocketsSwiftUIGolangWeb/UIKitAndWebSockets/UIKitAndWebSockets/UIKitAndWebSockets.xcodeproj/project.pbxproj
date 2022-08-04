@@ -16,6 +16,7 @@
 		98A23495289BB6BF0092E15C /* UIKitAndWebSocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A23494289BB6BF0092E15C /* UIKitAndWebSocketsTests.swift */; };
 		98A2349F289BB6BF0092E15C /* UIKitAndWebSocketsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A2349E289BB6BF0092E15C /* UIKitAndWebSocketsUITests.swift */; };
 		98A234A1289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234A0289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift */; };
+		98A234B1289BD8170092E15C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A234B0289BD8170092E15C /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		98A2349A289BB6BF0092E15C /* UIKitAndWebSocketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitAndWebSocketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A2349E289BB6BF0092E15C /* UIKitAndWebSocketsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndWebSocketsUITests.swift; sourceTree = "<group>"; };
 		98A234A0289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitAndWebSocketsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98A234B0289BD8170092E15C /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		98A2347C289BB6BC0092E15C /* UIKitAndWebSockets */ = {
 			isa = PBXGroup;
 			children = (
+				98A234AF289BD7EB0092E15C /* ViewController */,
 				98A2347D289BB6BC0092E15C /* AppDelegate.swift */,
 				98A2347F289BB6BC0092E15C /* SceneDelegate.swift */,
 				98A23481289BB6BC0092E15C /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				98A234A0289BB6BF0092E15C /* UIKitAndWebSocketsUITestsLaunchTests.swift */,
 			);
 			path = UIKitAndWebSocketsUITests;
+			sourceTree = "<group>";
+		};
+		98A234AF289BD7EB0092E15C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98A234B0289BD8170092E15C /* MessageViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				98A23482289BB6BC0092E15C /* ViewController.swift in Sources */,
 				98A2347E289BB6BC0092E15C /* AppDelegate.swift in Sources */,
+				98A234B1289BD8170092E15C /* MessageViewController.swift in Sources */,
 				98A23480289BB6BC0092E15C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
