@@ -8,6 +8,10 @@
 import UIKit
 
 class MessageViewController: UITabBarController {
+    
+    var messagesTableView: UITableView!
+    var messageFormAlert: UIAlertController!
+    var connectionFormAlert: UIAlertController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
