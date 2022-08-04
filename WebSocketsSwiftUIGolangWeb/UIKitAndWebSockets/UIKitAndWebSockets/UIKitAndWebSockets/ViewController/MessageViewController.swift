@@ -21,15 +21,18 @@ class MessageViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-        allMessages.append(Message(id: "Test ID", body: "BodyTest", sender: "SenderTest", senderID: "SenderID Test"))
         
+// placeholder message  for messagesTableView
+        allMessages.append(Message(id: "Test ID", body: "BodyTest", sender: "SenderTest", senderID: "SenderID Test"))
+         
+        //MARK: Run all our functions for setup project
         setupMessagesTableView()
-        addBarButtonItems()
         setupConnectionFormAlert()
         setupMessageFormAlert()
+        addBarButtonItems()
       
     }
+    //MARK: AddBarButtonItems()
     func addBarButtonItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentAlert))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "WS Conn", style: .plain, target: self, action: #selector(presentWSConnAlert))
@@ -41,7 +44,7 @@ class MessageViewController: UITabBarController {
         present(connectionFormAlert, animated: true)
     }
     
-    //MARK: Clean Array
+    //MARK: Clean allMessages Array
     func cleanArray() {
         DispatchQueue.main.async {
             [weak self] in
@@ -50,14 +53,5 @@ class MessageViewController: UITabBarController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

@@ -10,7 +10,7 @@ import UIKit
 extension MessageViewController: UITableViewDelegate, UITableViewDataSource {
     
     
-    //MARK: messageTableView constraint
+    //MARK: setupMessageTableView()
     //setup constraints for messageTableView
     
     func setupMessagesTableView() {
@@ -24,9 +24,10 @@ extension MessageViewController: UITableViewDelegate, UITableViewDataSource {
         messagesTableView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         messagesTableView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         messagesTableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-       // messagesTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
     }
+    
+    
+    //MARK: Implemented  UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allMessages.count
