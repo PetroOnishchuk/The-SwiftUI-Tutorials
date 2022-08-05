@@ -21,16 +21,16 @@ class MessageViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-// placeholder message  for messagesTableView
+        title = "WebSocket Client & UIKit"
+        // placeholder message for messagesTableView
         allMessages.append(Message(id: "Test ID", body: "BodyTest", sender: "SenderTest", senderID: "SenderID Test"))
-         
+        
         //MARK: Run all our functions for setup project
         setupMessagesTableView()
         setupConnectionFormAlert()
         setupMessageFormAlert()
         addBarButtonItems()
-      
+        
     }
     //MARK: AddBarButtonItems()
     func addBarButtonItems() {
@@ -51,7 +51,5 @@ class MessageViewController: UITabBarController {
             self?.allMessages = []
         }
     }
-
-
     
 }

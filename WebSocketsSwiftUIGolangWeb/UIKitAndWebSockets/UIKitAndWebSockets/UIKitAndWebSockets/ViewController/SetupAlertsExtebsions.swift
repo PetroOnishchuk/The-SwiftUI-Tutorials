@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 extension MessageViewController {
-    //MARK: - selectConnectionFormAlert
+    
+    //MARK:  setupConnectionFormAlert()
+    //setup UIAlertController for make WebSocket connections
     func setupConnectionFormAlert() {
         connectionFormAlert = UIAlertController(title: "WS Connection Setting", message: "Select type of WS Connection\n or Close WSConnection", preferredStyle: .alert)
         
@@ -42,6 +44,7 @@ extension MessageViewController {
     }
     
     //MARK: - messageFormAlert
+    //setup UIAlertController for create message for send message through WebSocket Connection
     func setupMessageFormAlert() {
         messageFormAlert = UIAlertController(title: "Create a New Message", message: "Connection Type: \(connectionType.rawValue)", preferredStyle: .alert)
         
@@ -72,6 +75,7 @@ extension MessageViewController {
         messageFormAlert.addAction(cancelAction)
     }
     
+//func for create a new Message for send to WebSocket Server
     func newMessage() -> Message {
         let bodyText = messageFormAlert.textFields?[0].text ?? "No Body"
         let senderText = messageFormAlert.textFields?[1].text ?? "No Sender"

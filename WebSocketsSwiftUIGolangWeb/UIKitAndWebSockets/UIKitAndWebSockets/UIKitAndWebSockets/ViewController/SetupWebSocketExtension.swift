@@ -9,24 +9,22 @@ import Foundation
 
 extension MessageViewController: URLSessionWebSocketDelegate {
     
+    
+    //MARK: makeConn() connection
+    // func for make WebSocket Connection
     func makeConn() {
         let session = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue())
         
         let url = makeWsULR()
-         
-       
         webSocket = session.webSocketTask(with: url)
        
-        //Connect and hanles handshake
         webSocket?.resume()
     }
     
+    //MARK: receive() message
+    // func for receive message from WebSocket Server
     func receive() {
-//        let workItem = DispatchWorkItem{ [weak self] in
-            
              webSocket?.receive(completionHandler: { [weak self]result  in
-                
-                
                 switch result {
                 case .success(let message):
                     
@@ -46,17 +44,15 @@ extension MessageViewController: URLSessionWebSocketDelegate {
                 case .failure(let error):
                     print("Error Receiving \(error)")
                 }
-                // Creates the Recurrsion
+                // Creates the Recursion
+                 // for listen again message from WebSocket Server
                  self?.receive()
             })
-//        }
-//        DispatchQueue.global().asyncAfter(deadline: .now() + 1 , execute: workItem)
-//        print("Run")
     }
-    
+ 
+    // work with message what we take from WebSocket Server
     func appendToArray(text: String) {
         let dataString = Data(text.utf8)
-        
         switch connectionType {
         case .piesocketWSServer:
             DispatchQueue.main.async {
@@ -78,9 +74,9 @@ extension MessageViewController: URLSessionWebSocketDelegate {
                 print("Decode Error: \(decodeError)")
             }
         }
-       
     }
     
+    //work with message object before pass to func send(text: string)
     func sendMessageToWSServer(newMessage: Message) {
         guard let encodeData = encodeAppObject(data: newMessage) else {
             print("Error with Encode String")
@@ -92,14 +88,13 @@ extension MessageViewController: URLSessionWebSocketDelegate {
         }
         send(text: stringData)
     }
-    
+    //MARK: send(text: String)
+    // func for send message to WebSocket Server
     func send(text: String){
           print("Send Message")
         self.webSocket?.send(.string(text), completionHandler: { [weak self] error in
                 if let error {
-                    print(" have Error Message")
-                } else {
-                    print("Error \(error.debugDescription)")
+                    print(" We have Error Message: \(error)")
                 }
             })
     }
@@ -137,6 +132,7 @@ extension MessageViewController: URLSessionWebSocketDelegate {
     }
     
     //MARK: MakeURL
+    // make url, depend of type of the connectionType
     func makeWsULR() -> URL {
         switch connectionType {
         case .piesocketWSServer:
@@ -149,17 +145,15 @@ extension MessageViewController: URLSessionWebSocketDelegate {
     }
     
     
-    //MARK: URLSESSION Protocols
-    
+    //MARK: Implement URLSessionWebSocketDelegate protocol 
     func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol protocol: String?) {
-        print("Connected to server DELEGATE")
+        print("Connected to server successful")
       self.receive()
-       // self.send()
     }
     
     
     func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didCloseWith closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?) {
-        print("Disconnect from Server \(reason)")
+        print("Disconnect from Server \(String(describing: reason))")
     }
     
 }
