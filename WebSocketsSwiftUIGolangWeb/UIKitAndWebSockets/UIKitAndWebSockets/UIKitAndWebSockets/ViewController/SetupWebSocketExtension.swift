@@ -17,39 +17,36 @@ extension MessageViewController: URLSessionWebSocketDelegate {
         
         let url = makeWsULR()
         webSocket = session.webSocketTask(with: url)
-       
         webSocket?.resume()
     }
     
     //MARK: receive() message
     // func for receive message from WebSocket Server
     func receive() {
-             webSocket?.receive(completionHandler: { [weak self]result  in
-                switch result {
-                case .success(let message):
-                    
-                    switch message {
-                    
-                    case .data(let data):
-                        print("Data received \(data)")
-                        
-                    case .string(let strMessage):
-                    print("String received \(strMessage)")
-                        self?.appendToArray(text: strMessage)
-                        
-                    default:
-                        break
-                    }
+        webSocket?.receive(completionHandler: { [weak self]result  in
+            switch result {
+            case .success(let message):
                 
-                case .failure(let error):
-                    print("Error Receiving \(error)")
+                switch message {
+                    
+                case .data(let data):
+                    print("Data received \(data)")
+                case .string(let strMessage):
+                    print("String received \(strMessage)")
+                    self?.appendToArray(text: strMessage)
+                default:
+                    break
                 }
-                // Creates the Recursion
-                 // for listen again message from WebSocket Server
-                 self?.receive()
-            })
+                
+            case .failure(let error):
+                print("Error Receiving \(error)")
+            }
+            // Creates the Recursion
+            // for listen again message from WebSocket Server
+            self?.receive()
+        })
     }
- 
+    
     // work with message what we take from WebSocket Server
     func appendToArray(text: String) {
         let dataString = Data(text.utf8)
@@ -63,10 +60,10 @@ extension MessageViewController: URLSessionWebSocketDelegate {
             }
         case .golangWSServer:
             do {
-               let response = try self.decodeAppObject(decodeType: Message.self, inputData: dataString)
+                let response = try self.decodeAppObject(decodeType: Message.self, inputData: dataString)
                 DispatchQueue.main.async {
                     [weak self] in
-                     
+                    
                     self?.allMessages.append(response)
                     self?.messagesTableView.reloadData()
                 }
@@ -91,21 +88,21 @@ extension MessageViewController: URLSessionWebSocketDelegate {
     //MARK: send(text: String)
     // func for send message to WebSocket Server
     func send(text: String){
-          print("Send Message")
+        print("Send Message")
         self.webSocket?.send(.string(text), completionHandler: { [weak self] error in
-                if let error {
-                    print(" We have Error Message: \(error)")
-                }
-            })
+            if let error {
+                print(" We have Error Message: \(error)")
+            }
+        })
     }
     
     //MARK: Close Session
-     func closeSession(){
-         webSocket?.cancel(with: .normalClosure, reason: nil)
+    func closeSession(){
+        webSocket?.cancel(with: .normalClosure, reason: nil)
         
     }
     
-     
+    
     //MARK: DecodeAppObject
     func decodeAppObject<T: Codable>(decodeType: T.Type, inputData: Data) throws -> T {
         do {
@@ -137,7 +134,7 @@ extension MessageViewController: URLSessionWebSocketDelegate {
         switch connectionType {
         case .piesocketWSServer:
             let url = URL(string:  "wss://demo.piesocket.com/v3/channel_1?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self")!
-           return url
+            return url
         case .golangWSServer:
             let url = URL(string: "ws://localhost:5000")!
             return url
@@ -145,10 +142,10 @@ extension MessageViewController: URLSessionWebSocketDelegate {
     }
     
     
-    //MARK: Implement URLSessionWebSocketDelegate protocol 
+    //MARK: Implement URLSessionWebSocketDelegate protocol
     func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol protocol: String?) {
         print("Connected to server successful")
-      self.receive()
+        self.receive()
     }
     
     

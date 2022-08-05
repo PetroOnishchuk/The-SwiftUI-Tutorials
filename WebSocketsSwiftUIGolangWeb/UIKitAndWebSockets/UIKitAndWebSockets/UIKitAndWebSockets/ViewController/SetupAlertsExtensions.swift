@@ -1,5 +1,5 @@
 //
-//  SetupAlertsExtebsions.swift
+//  SetupAlertsExtensions.swift
 //  UIKitAndWebSockets
 //
 //  Created by Petro Onishchuk on 8/4/22.
@@ -35,7 +35,6 @@ extension MessageViewController {
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) {_ in
         }
         
-        
         connectionFormAlert.addAction(piesocketWSCAction)
         connectionFormAlert.addAction(golangWSCAction)
         connectionFormAlert.addAction(disconnectWSCAction)
@@ -57,7 +56,6 @@ extension MessageViewController {
             titleTextField.placeholder = "SenderValue"
         }
         
-        
         let addAction = UIAlertAction(title: "Send Message", style: .default) {
             [weak self] _ in
             let newMessage = self?.newMessage() ?? Message(id: "", body: "Default Message", sender: "Def Sender", senderID: "Def Sender")
@@ -75,7 +73,7 @@ extension MessageViewController {
         messageFormAlert.addAction(cancelAction)
     }
     
-//func for create a new Message for send to WebSocket Server
+    //func for create a new Message for send to WebSocket Server
     func newMessage() -> Message {
         let bodyText = messageFormAlert.textFields?[0].text ?? "No Body"
         let senderText = messageFormAlert.textFields?[1].text ?? "No Sender"

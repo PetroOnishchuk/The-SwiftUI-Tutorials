@@ -8,8 +8,8 @@
 import UIKit
 
 class MessageViewController: UITabBarController {
-    //MARK: Properties of Class
     
+    //MARK: Properties for work with views and data
     var messagesTableView: UITableView!
     var messageFormAlert: UIAlertController!
     var connectionFormAlert: UIAlertController!
