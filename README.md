@@ -14,7 +14,7 @@ My Telegram channel: [@petro_onishchuk_dev](https://t.me/petro_onishchuk_dev)
 My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petro_onishchuk)
  
 
-## 19. [SwiftUI & Go (Golang) & WebSocket Client/Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb)
+## 19. [SwiftUI & UIKit & Go (Golang) & WebSocket Client/Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb)
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb)<br />
 
@@ -26,12 +26,16 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/r36N7LRO_kI) 
 
-### 19.1 [Go (Golang) & SwiftUI & WebSocket Client/Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb/GoWebSocketClientAndServer)  
+### 19.2 [Go (Golang) & SwiftUI & WebSocket Client/Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb/GoWebSocketClientAndServer)  
   
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb/GoWebSocketClientAndServer)  
 
-[YouTube](https://youtu.be/pWJmNDtgJZw) 
-
+[YouTube](https://youtu.be/pWJmNDtgJZw)
+ 
+### 19.3 [UIKit & WebSocket Client/Server & Go (Golang)](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb/UIKitAndWebSockets)  
+  
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb/UIKitAndWebSockets)  
+ 
  
 
 ## 18. [SwiftUI & Go (Golang) & Local Server & SQLite, MySQL, PostgreSQL](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/URLSessionGenericDatabaseSwiftUIGolang01)
