@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		98BD7231289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */; };
-		98BD7233289FB7F600CE7351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7232289FB7F600CE7351 /* ContentView.swift */; };
+		98BD7233289FB7F600CE7351 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7232289FB7F600CE7351 /* MainContentView.swift */; };
 		98BD7235289FB7F800CE7351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BD7234289FB7F800CE7351 /* Assets.xcassets */; };
 		98BD7238289FB7F800CE7351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */; };
+		98BD7245289FB96F00CE7351 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7244289FB96F00CE7351 /* MessageModel.swift */; };
+		98BD7247289FBA1F00CE7351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7246289FBA1F00CE7351 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98BD722D289FB7F600CE7351 /* SwiftUIandAmazonSNSPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIandAmazonSNSPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIandAmazonSNSPushApp.swift; sourceTree = "<group>"; };
-		98BD7232289FB7F600CE7351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98BD7232289FB7F600CE7351 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		98BD7234289FB7F800CE7351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98BD723E289FB83F00CE7351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98BD723F289FB89F00CE7351 /* SwiftUIandAmazonSNSPush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIandAmazonSNSPush.entitlements; sourceTree = "<group>"; };
+		98BD7244289FB96F00CE7351 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		98BD7246289FBA1F00CE7351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */,
-				98BD7232289FB7F600CE7351 /* ContentView.swift */,
+				98BD7240289FB8E600CE7351 /* AppDelegate */,
+				98BD7241289FB8EF00CE7351 /* Views */,
+				98BD7242289FB8FA00CE7351 /* ViewModel */,
+				98BD7243289FB90300CE7351 /* Model */,
+				98BD723F289FB89F00CE7351 /* SwiftUIandAmazonSNSPush.entitlements */,
+				98BD723E289FB83F00CE7351 /* Info.plist */,
 				98BD7234289FB7F800CE7351 /* Assets.xcassets */,
 				98BD7236289FB7F800CE7351 /* Preview Content */,
 			);
@@ -65,6 +76,37 @@
 				98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98BD7240289FB8E600CE7351 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7246289FBA1F00CE7351 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		98BD7241289FB8EF00CE7351 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7232289FB7F600CE7351 /* MainContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98BD7242289FB8FA00CE7351 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98BD7243289FB90300CE7351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7244289FB96F00CE7351 /* MessageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BD7233289FB7F600CE7351 /* ContentView.swift in Sources */,
+				98BD7247289FBA1F00CE7351 /* AppDelegate.swift in Sources */,
+				98BD7233289FB7F600CE7351 /* MainContentView.swift in Sources */,
+				98BD7245289FB96F00CE7351 /* MessageModel.swift in Sources */,
 				98BD7231289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,12 +308,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIandAmazonSNSPush/SwiftUIandAmazonSNSPush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIandAmazonSNSPush/Preview Content\"";
 				DEVELOPMENT_TEAM = JQVSXS5J2X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIandAmazonSNSPush/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIandAmazonSNSPush/SwiftUIandAmazonSNSPush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIandAmazonSNSPush/Preview Content\"";
 				DEVELOPMENT_TEAM = JQVSXS5J2X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIandAmazonSNSPush/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
