@@ -8,12 +8,39 @@
 import SwiftUI
 
 struct MainContentView: View {
+    @EnvironmentObject var notificationAppVM: NotificationAppVM
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(notificationAppVM.allMessages, id: \.self) {
+                        message in
+                        VStack(alignment: .leading) {
+                            Text("Title: \(message.title)")
+                            Text("Info: \(message.description)")
+                            Text("Date: \(notificationAppVM.convertDate(date: message.massageDate))")
+                        }
+                    }
+                } header: {
+                    Text("Messages List Section")
+                }
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(role: .destructive) {
+                        notificationAppVM.cleanMessageList()
+                    } label: {
+                        Text("Clean List")
+                    }
+
+                }
+               
+            }
+            .navigationTitle("Notification from ASNS")
+            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                notificationAppVM.setupNotifications()
+            }
         }
     }
 }
