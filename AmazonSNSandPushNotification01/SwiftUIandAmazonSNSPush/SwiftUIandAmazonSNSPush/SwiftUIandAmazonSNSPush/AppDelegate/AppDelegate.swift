@@ -10,8 +10,7 @@ import UIKit
 
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
-    //MARK: application didFinishLaunchingWithOptions
-    
+    //MARK: application didFinishLaunchingWithOptions 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
       // MARK: Request notifications

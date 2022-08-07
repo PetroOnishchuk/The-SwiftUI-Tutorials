@@ -14,29 +14,24 @@ class NotificationAppVM: ObservableObject {
     
     //MARK: Take Notifications
     // Take notifications from NotificationCenter
-    
     func setupNotifications() {
-        print("Hello NOT")
         let notificationName = Notification.Name(NotificationNameValue.pushNotification.rawValue)
-  //start to listening our notification
-            // from NotificationCenter
         
+        //start to listening our notification
+        // from NotificationCenter
         NotificationCenter.default.addObserver(forName: notificationName, object: nil, queue: .main) { [weak self] notification in
             
             self?.convertNotificationMessage(userInfo: notification.object)
-                
-            
             
         }
     }
     
     
-   
+    
     //MARK: Convert message for display in App
     func convertNotificationMessage(userInfo: Any?) {
-        print("Convert NOT")
-        // V 2.0
-        // through NSDictionary
+        
+        // Work with Data through NSDictionary
         guard let aps = userInfo as? NSDictionary else {
             print("Convert to NSDictionary Error")
             return
@@ -54,9 +49,7 @@ class NotificationAppVM: ObservableObject {
         DispatchQueue.main.async {
             [weak self] in
             self?.allMessages.append(newMessage)
-        }
-        
-         
+        } 
     }
     
     //Clean list

@@ -32,9 +32,7 @@ struct MainContentView: View {
                     } label: {
                         Text("Clean List")
                     }
-
                 }
-               
             }
             .navigationTitle("Notification from ASNS")
             .navigationBarTitleDisplayMode(.inline)
