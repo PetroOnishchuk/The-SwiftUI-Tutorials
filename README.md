@@ -15,8 +15,11 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
  ## 20. [SwiftUI & UIKit(later) Projects & Amazon Simple Notification Service (AWS SNS)](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01)
  ### 21.1 [SwiftUI Project & Amazon Simple Notification Service](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01/SwiftUIandAmazonSNSPush)  
- [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01/SwiftUIandAmazonSNSPush)
-   
+ [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01/SwiftUIandAmazonSNSPush)  
+   ### 21.2 [UIKit Project & Amazon Simple Notification Service](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01/UIKitandAmazonSNSPush)  
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01/UIKitandAmazonSNSPush) 
+
  
 
 ## 19. [SwiftUI & UIKit & Go (Golang) & WebSocket Client/Server](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/WebSocketsSwiftUIGolangWeb)
