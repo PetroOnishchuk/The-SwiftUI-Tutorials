@@ -17,8 +17,8 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 ### 21.2. [SwiftUI & Firebase & Cloud Messaging & Push Notifications](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/SwiftUIandFirebaseAndPushNotifications01) 
  
  [GitHub](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/SwiftUIandFirebaseAndPushNotifications01)  
-### 21.1. [UIKit & Firebase & Cloud Messaging & Push Notifications](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/UIKitAndFirebaseAndPushNotifications01/UIKitAndFirebaseAndPushNotifications01)  
-[GitHub](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/UIKitAndFirebaseAndPushNotifications01/UIKitAndFirebaseAndPushNotifications01) 
+### 21.1. [UIKit & Firebase & Cloud Messaging & Push Notifications](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/UIKitAndFirebaseAndPushNotifications01)  
+[GitHub](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications/tree/master/UIKitAndFirebaseAndPushNotifications01) 
  
 
  ## 20. [SwiftUI & UIKit Projects & Amazon Simple Notification Service (AWS SNS)](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/AmazonSNSandPushNotification01)
