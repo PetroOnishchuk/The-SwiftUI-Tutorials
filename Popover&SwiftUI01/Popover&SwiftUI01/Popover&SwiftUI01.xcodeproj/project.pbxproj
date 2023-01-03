@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		983798022784688C0052C5D5 /* Popover_SwiftUI01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983798012784688C0052C5D5 /* Popover_SwiftUI01App.swift */; };
+		983798062784688E0052C5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983798052784688E0052C5D5 /* Assets.xcassets */; };
+		983798092784688E0052C5D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983798082784688E0052C5D5 /* Preview Assets.xcassets */; };
+		9837981727846AAB0052C5D5 /* ProjectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981627846AAB0052C5D5 /* ProjectImage.swift */; };
+		9837981927846D770052C5D5 /* ProjectImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981827846D770052C5D5 /* ProjectImageData.swift */; };
+		9837981B27846E140052C5D5 /* ProjectImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981A27846E140052C5D5 /* ProjectImageViewModel.swift */; };
+		9837981D27846F4C0052C5D5 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981C27846F4C0052C5D5 /* MainContentView.swift */; };
+		9837981F278473030052C5D5 /* SinglePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981E278473030052C5D5 /* SinglePopoverView.swift */; };
+		98379821278484250052C5D5 /* MultiplyPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98379820278484250052C5D5 /* MultiplyPopoverView.swift */; };
+		98379823278485F60052C5D5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98379822278485F60052C5D5 /* DetailView.swift */; };
+		983798252784A8D90052C5D5 /* SheetProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983798242784A8D90052C5D5 /* SheetProjectView.swift */; };
+		9837982D2784B9EF0052C5D5 /* PopoverMacOS_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837982C2784B9EF0052C5D5 /* PopoverMacOS_SwiftUIApp.swift */; };
+		983798312784B9F20052C5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983798302784B9F20052C5D5 /* Assets.xcassets */; };
+		983798342784B9F20052C5D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983798332784B9F20052C5D5 /* Preview Assets.xcassets */; };
+		983798392784BA020052C5D5 /* ProjectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981627846AAB0052C5D5 /* ProjectImage.swift */; };
+		9837983A2784BA070052C5D5 /* ProjectImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981A27846E140052C5D5 /* ProjectImageViewModel.swift */; };
+		9837983B2784BA0E0052C5D5 /* ProjectImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837981827846D770052C5D5 /* ProjectImageData.swift */; };
+		9837983D2784BA400052C5D5 /* MainMacOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837983C2784BA400052C5D5 /* MainMacOSContentView.swift */; };
+		9837983F2784BAFD0052C5D5 /* MultiplyMacOSPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837983E2784BAFD0052C5D5 /* MultiplyMacOSPopoverView.swift */; };
+		983798412784BD120052C5D5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98379822278485F60052C5D5 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		983797FE2784688C0052C5D5 /* Popover&SwiftUI01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popover&SwiftUI01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		983798012784688C0052C5D5 /* Popover_SwiftUI01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover_SwiftUI01App.swift; sourceTree = "<group>"; };
+		983798052784688E0052C5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983798082784688E0052C5D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9837981627846AAB0052C5D5 /* ProjectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectImage.swift; sourceTree = "<group>"; };
+		9837981827846D770052C5D5 /* ProjectImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectImageData.swift; sourceTree = "<group>"; };
+		9837981A27846E140052C5D5 /* ProjectImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectImageViewModel.swift; sourceTree = "<group>"; };
+		9837981C27846F4C0052C5D5 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		9837981E278473030052C5D5 /* SinglePopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePopoverView.swift; sourceTree = "<group>"; };
+		98379820278484250052C5D5 /* MultiplyPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyPopoverView.swift; sourceTree = "<group>"; };
+		98379822278485F60052C5D5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		983798242784A8D90052C5D5 /* SheetProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetProjectView.swift; sourceTree = "<group>"; };
+		9837982A2784B9EF0052C5D5 /* PopoverMacOS&SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PopoverMacOS&SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9837982C2784B9EF0052C5D5 /* PopoverMacOS_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverMacOS_SwiftUIApp.swift; sourceTree = "<group>"; };
+		983798302784B9F20052C5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983798332784B9F20052C5D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		983798352784B9F20052C5D5 /* PopoverMacOS_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PopoverMacOS_SwiftUI.entitlements; sourceTree = "<group>"; };
+		9837983C2784BA400052C5D5 /* MainMacOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMacOSContentView.swift; sourceTree = "<group>"; };
+		9837983E2784BAFD0052C5D5 /* MultiplyMacOSPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyMacOSPopoverView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		983797FB2784688C0052C5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983798272784B9EF0052C5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		983797F52784688C0052C5D5 = {
+			isa = PBXGroup;
+			children = (
+				983798002784688C0052C5D5 /* Popover&SwiftUI01 */,
+				9837982B2784B9EF0052C5D5 /* PopoverMacOS&SwiftUI */,
+				983797FF2784688C0052C5D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		983797FF2784688C0052C5D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983797FE2784688C0052C5D5 /* Popover&SwiftUI01.app */,
+				9837982A2784B9EF0052C5D5 /* PopoverMacOS&SwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983798002784688C0052C5D5 /* Popover&SwiftUI01 */ = {
+			isa = PBXGroup;
+			children = (
+				983798012784688C0052C5D5 /* Popover_SwiftUI01App.swift */,
+				9837981227846A340052C5D5 /* Views */,
+				9837981127846A2C0052C5D5 /* ViewModel */,
+				9837981027846A260052C5D5 /* Model */,
+				9837981327846A390052C5D5 /* Data */,
+				983798052784688E0052C5D5 /* Assets.xcassets */,
+				983798072784688E0052C5D5 /* Preview Content */,
+			);
+			path = "Popover&SwiftUI01";
+			sourceTree = "<group>";
+		};
+		983798072784688E0052C5D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				983798082784688E0052C5D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9837981027846A260052C5D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9837981627846AAB0052C5D5 /* ProjectImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9837981127846A2C0052C5D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9837981A27846E140052C5D5 /* ProjectImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9837981227846A340052C5D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9837981C27846F4C0052C5D5 /* MainContentView.swift */,
+				9837981E278473030052C5D5 /* SinglePopoverView.swift */,
+				98379820278484250052C5D5 /* MultiplyPopoverView.swift */,
+				98379822278485F60052C5D5 /* DetailView.swift */,
+				983798242784A8D90052C5D5 /* SheetProjectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9837981327846A390052C5D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9837981827846D770052C5D5 /* ProjectImageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9837982B2784B9EF0052C5D5 /* PopoverMacOS&SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				9837982C2784B9EF0052C5D5 /* PopoverMacOS_SwiftUIApp.swift */,
+				9837983C2784BA400052C5D5 /* MainMacOSContentView.swift */,
+				9837983E2784BAFD0052C5D5 /* MultiplyMacOSPopoverView.swift */,
+				983798302784B9F20052C5D5 /* Assets.xcassets */,
+				983798352784B9F20052C5D5 /* PopoverMacOS_SwiftUI.entitlements */,
+				983798322784B9F20052C5D5 /* Preview Content */,
+			);
+			path = "PopoverMacOS&SwiftUI";
+			sourceTree = "<group>";
+		};
+		983798322784B9F20052C5D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				983798332784B9F20052C5D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		983797FD2784688C0052C5D5 /* Popover&SwiftUI01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9837980C2784688E0052C5D5 /* Build configuration list for PBXNativeTarget "Popover&SwiftUI01" */;
+			buildPhases = (
+				983797FA2784688C0052C5D5 /* Sources */,
+				983797FB2784688C0052C5D5 /* Frameworks */,
+				983797FC2784688C0052C5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Popover&SwiftUI01";
+			productName = "Popover&SwiftUI01";
+			productReference = 983797FE2784688C0052C5D5 /* Popover&SwiftUI01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		983798292784B9EF0052C5D5 /* PopoverMacOS&SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983798362784B9F20052C5D5 /* Build configuration list for PBXNativeTarget "PopoverMacOS&SwiftUI" */;
+			buildPhases = (
+				983798262784B9EF0052C5D5 /* Sources */,
+				983798272784B9EF0052C5D5 /* Frameworks */,
+				983798282784B9EF0052C5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PopoverMacOS&SwiftUI";
+			productName = "PopoverMacOS&SwiftUI";
+			productReference = 9837982A2784B9EF0052C5D5 /* PopoverMacOS&SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		983797F62784688C0052C5D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					983797FD2784688C0052C5D5 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					983798292784B9EF0052C5D5 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 983797F92784688C0052C5D5 /* Build configuration list for PBXProject "Popover&SwiftUI01" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 983797F52784688C0052C5D5;
+			productRefGroup = 983797FF2784688C0052C5D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				983797FD2784688C0052C5D5 /* Popover&SwiftUI01 */,
+				983798292784B9EF0052C5D5 /* PopoverMacOS&SwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		983797FC2784688C0052C5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983798092784688E0052C5D5 /* Preview Assets.xcassets in Resources */,
+				983798062784688E0052C5D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983798282784B9EF0052C5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983798342784B9F20052C5D5 /* Preview Assets.xcassets in Resources */,
+				983798312784B9F20052C5D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		983797FA2784688C0052C5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9837981F278473030052C5D5 /* SinglePopoverView.swift in Sources */,
+				98379823278485F60052C5D5 /* DetailView.swift in Sources */,
+				9837981B27846E140052C5D5 /* ProjectImageViewModel.swift in Sources */,
+				9837981727846AAB0052C5D5 /* ProjectImage.swift in Sources */,
+				9837981927846D770052C5D5 /* ProjectImageData.swift in Sources */,
+				983798022784688C0052C5D5 /* Popover_SwiftUI01App.swift in Sources */,
+				98379821278484250052C5D5 /* MultiplyPopoverView.swift in Sources */,
+				983798252784A8D90052C5D5 /* SheetProjectView.swift in Sources */,
+				9837981D27846F4C0052C5D5 /* MainContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983798262784B9EF0052C5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9837983A2784BA070052C5D5 /* ProjectImageViewModel.swift in Sources */,
+				983798392784BA020052C5D5 /* ProjectImage.swift in Sources */,
+				9837983B2784BA0E0052C5D5 /* ProjectImageData.swift in Sources */,
+				983798412784BD120052C5D5 /* DetailView.swift in Sources */,
+				9837983D2784BA400052C5D5 /* MainMacOSContentView.swift in Sources */,
+				9837983F2784BAFD0052C5D5 /* MultiplyMacOSPopoverView.swift in Sources */,
+				9837982D2784B9EF0052C5D5 /* PopoverMacOS_SwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9837980A2784688E0052C5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9837980B2784688E0052C5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9837980D2784688E0052C5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Popover&SwiftUI01/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.petroonishchuk.Popover-SwiftUI01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9837980E2784688E0052C5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Popover&SwiftUI01/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.petroonishchuk.Popover-SwiftUI01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		983798372784B9F20052C5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PopoverMacOS&SwiftUI/PopoverMacOS_SwiftUI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PopoverMacOS&SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.petroonishchuk.PopoverMacOS-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		983798382784B9F20052C5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PopoverMacOS&SwiftUI/PopoverMacOS_SwiftUI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PopoverMacOS&SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.petroonishchuk.PopoverMacOS-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		983797F92784688C0052C5D5 /* Build configuration list for PBXProject "Popover&SwiftUI01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9837980A2784688E0052C5D5 /* Debug */,
+				9837980B2784688E0052C5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9837980C2784688E0052C5D5 /* Build configuration list for PBXNativeTarget "Popover&SwiftUI01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9837980D2784688E0052C5D5 /* Debug */,
+				9837980E2784688E0052C5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983798362784B9F20052C5D5 /* Build configuration list for PBXNativeTarget "PopoverMacOS&SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983798372784B9F20052C5D5 /* Debug */,
+				983798382784B9F20052C5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 983797F62784688C0052C5D5 /* Project object */;
+}

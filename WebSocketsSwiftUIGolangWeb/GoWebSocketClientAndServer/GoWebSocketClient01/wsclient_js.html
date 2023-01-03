@@ -1,0 +1,54 @@
+<html>
+    <head> 
+    </head>
+    <body>
+        <style>
+            html {
+                text-align: center;
+                font-size: 16px;
+            } 
+        </style>
+        <h1>
+            WebSocket Client & JS
+        </h1>
+        <form>
+            <p>
+                Message: <input id="message" type="text" value="Hello, WebSocket Client!">
+            </p>
+        </form>
+        <button onclick="send();">Send Message</button>
+        <div id="messageOut">
+            <pre id="output"></pre>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var wsock = null;
+        var wsurl = "ws://localhost:5000";
+        var output = document.getElementById("output")
+        window.onload = function() {
+
+            wsock = new WebSocket(wsurl);
+
+            wsock.onopen = function() {
+                console.log("Connected to " + wsurl);
+            }
+            
+            wsock.onclose = function(e) {
+                const obj = {id: "", body: "Connection Close", sender: "WEB", senderid: ""}
+                wsock.send(JSON.stringify(obj));
+                wsock.send
+            }
+            wsock.onmessage = function(e) {
+                var myObj = JSON.parse(e.data);
+
+                output.innerHTML += "\nServer: " + e.data + "\n";
+            }
+
+        };
+        function send() {
+            var msg = document.getElementById('message').value;
+            const obj = {id: "", body: msg, sender: "WEB", senderid: ""}
+            wsock.send(JSON.stringify(obj));
+        };
+    </script>
+</html>

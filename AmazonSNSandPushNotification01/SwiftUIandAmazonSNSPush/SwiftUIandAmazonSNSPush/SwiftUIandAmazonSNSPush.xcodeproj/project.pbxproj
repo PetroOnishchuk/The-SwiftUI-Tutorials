@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98BD7231289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */; };
+		98BD7233289FB7F600CE7351 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7232289FB7F600CE7351 /* MainContentView.swift */; };
+		98BD7235289FB7F800CE7351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BD7234289FB7F800CE7351 /* Assets.xcassets */; };
+		98BD7238289FB7F800CE7351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */; };
+		98BD7245289FB96F00CE7351 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7244289FB96F00CE7351 /* MessageModel.swift */; };
+		98BD7247289FBA1F00CE7351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7246289FBA1F00CE7351 /* AppDelegate.swift */; };
+		98BD7249289FBA7600CE7351 /* NotificationAppVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BD7248289FBA7600CE7351 /* NotificationAppVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98BD722D289FB7F600CE7351 /* SwiftUIandAmazonSNSPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIandAmazonSNSPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIandAmazonSNSPushApp.swift; sourceTree = "<group>"; };
+		98BD7232289FB7F600CE7351 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		98BD7234289FB7F800CE7351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98BD723E289FB83F00CE7351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98BD723F289FB89F00CE7351 /* SwiftUIandAmazonSNSPush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIandAmazonSNSPush.entitlements; sourceTree = "<group>"; };
+		98BD7244289FB96F00CE7351 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		98BD7246289FBA1F00CE7351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98BD7248289FBA7600CE7351 /* NotificationAppVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAppVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98BD722A289FB7F600CE7351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98BD7224289FB7F600CE7351 = {
+			isa = PBXGroup;
+			children = (
+				98BD722F289FB7F600CE7351 /* SwiftUIandAmazonSNSPush */,
+				98BD722E289FB7F600CE7351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98BD722E289FB7F600CE7351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98BD722D289FB7F600CE7351 /* SwiftUIandAmazonSNSPush.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98BD722F289FB7F600CE7351 /* SwiftUIandAmazonSNSPush */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7230289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift */,
+				98BD7240289FB8E600CE7351 /* AppDelegate */,
+				98BD7242289FB8FA00CE7351 /* ViewModel */,
+				98BD7241289FB8EF00CE7351 /* Views */,
+				98BD7243289FB90300CE7351 /* Model */,
+				98BD723F289FB89F00CE7351 /* SwiftUIandAmazonSNSPush.entitlements */,
+				98BD723E289FB83F00CE7351 /* Info.plist */,
+				98BD7234289FB7F800CE7351 /* Assets.xcassets */,
+				98BD7236289FB7F800CE7351 /* Preview Content */,
+			);
+			path = SwiftUIandAmazonSNSPush;
+			sourceTree = "<group>";
+		};
+		98BD7236289FB7F800CE7351 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7237289FB7F800CE7351 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98BD7240289FB8E600CE7351 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7246289FBA1F00CE7351 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		98BD7241289FB8EF00CE7351 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7232289FB7F600CE7351 /* MainContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98BD7242289FB8FA00CE7351 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7248289FBA7600CE7351 /* NotificationAppVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98BD7243289FB90300CE7351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98BD7244289FB96F00CE7351 /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98BD722C289FB7F600CE7351 /* SwiftUIandAmazonSNSPush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98BD723B289FB7F800CE7351 /* Build configuration list for PBXNativeTarget "SwiftUIandAmazonSNSPush" */;
+			buildPhases = (
+				98BD7229289FB7F600CE7351 /* Sources */,
+				98BD722A289FB7F600CE7351 /* Frameworks */,
+				98BD722B289FB7F600CE7351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIandAmazonSNSPush;
+			productName = SwiftUIandAmazonSNSPush;
+			productReference = 98BD722D289FB7F600CE7351 /* SwiftUIandAmazonSNSPush.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98BD7225289FB7F600CE7351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					98BD722C289FB7F600CE7351 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 98BD7228289FB7F600CE7351 /* Build configuration list for PBXProject "SwiftUIandAmazonSNSPush" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98BD7224289FB7F600CE7351;
+			productRefGroup = 98BD722E289FB7F600CE7351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98BD722C289FB7F600CE7351 /* SwiftUIandAmazonSNSPush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98BD722B289FB7F600CE7351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BD7238289FB7F800CE7351 /* Preview Assets.xcassets in Resources */,
+				98BD7235289FB7F800CE7351 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98BD7229289FB7F600CE7351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BD7247289FBA1F00CE7351 /* AppDelegate.swift in Sources */,
+				98BD7249289FBA7600CE7351 /* NotificationAppVM.swift in Sources */,
+				98BD7233289FB7F600CE7351 /* MainContentView.swift in Sources */,
+				98BD7245289FB96F00CE7351 /* MessageModel.swift in Sources */,
+				98BD7231289FB7F600CE7351 /* SwiftUIandAmazonSNSPushApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		98BD7239289FB7F800CE7351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98BD723A289FB7F800CE7351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98BD723C289FB7F800CE7351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIandAmazonSNSPush/SwiftUIandAmazonSNSPush.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIandAmazonSNSPush/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIandAmazonSNSPush/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.petroonishchuk.SwiftUIandAmazonSNSPush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98BD723D289FB7F800CE7351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIandAmazonSNSPush/SwiftUIandAmazonSNSPush.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIandAmazonSNSPush/Preview Content\"";
+				DEVELOPMENT_TEAM = JQVSXS5J2X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIandAmazonSNSPush/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.petroonishchuk.SwiftUIandAmazonSNSPush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98BD7228289FB7F600CE7351 /* Build configuration list for PBXProject "SwiftUIandAmazonSNSPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BD7239289FB7F800CE7351 /* Debug */,
+				98BD723A289FB7F800CE7351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98BD723B289FB7F800CE7351 /* Build configuration list for PBXNativeTarget "SwiftUIandAmazonSNSPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98BD723C289FB7F800CE7351 /* Debug */,
+				98BD723D289FB7F800CE7351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98BD7225289FB7F600CE7351 /* Project object */;
+}
