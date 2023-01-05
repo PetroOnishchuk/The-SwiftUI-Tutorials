@@ -18,7 +18,13 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 ### 22.1. [PART #1: SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part1)
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part1)<br />
 
-[YouTube](https://youtu.be/hNPIem4t1_g) 
+[YouTube](https://youtu.be/hNPIem4t1_g)  
+
+
+### 22.2. [PART #2: SwiftUI & Firebase & Authentication & Alert. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part2)
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part2)<br />
+
+[YouTube](https://youtu.be/RYaexCWs-YU)
  
 
 ## 21. [SwiftUI & UIKit Projects & Google Firebase & Cloud Messaging & Push Notifications](https://github.com/PetroOnishchuk/Firebase-Google-SwiftUI-UIKit-Push-Notifications)  

@@ -15,11 +15,17 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 ## 1. [SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)  
 
-### [PART #1: SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part1)  
+### 1.1 [PART #1: SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part1)  
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part1)<br />
 
 [YouTube](https://youtu.be/hNPIem4t1_g) 
+
+### 1.2 [PART #2: SwiftUI & Firebase & Authentication. To-Do & Alert App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part2)  
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part2)<br />
+
+[YouTube](https://youtu.be/RYaexCWs-YU)
 
 
 
