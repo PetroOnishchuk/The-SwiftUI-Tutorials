@@ -5,6 +5,8 @@ This is my repository with SwiftUI Tutorials
 
 My website [petroonishchuk.com](https://petroonishchuk.com)
 
+☕️ Support: [Buy me a coffee](https://www.buymeacoffee.com/petroonishchuk)
+
 My YouTube channel with videos for this tutorials: [YouTube](https://www.youtube.com/watch?v=imxzXEwUNos&list=PL3pUvT0fmHNjjoKEmLaad62wmfoLPg3Sq&index=1)
 
 My LinkedIn account:  
