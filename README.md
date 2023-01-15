@@ -18,7 +18,7 @@ My Telegram channel: [@petro_onishchuk_dev](https://t.me/petro_onishchuk_dev)
 
 My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petro_onishchuk)
 
-## 22. [SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)  
+## 22. [SwiftUI & Firebase & Authentication. To-Do App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase)  
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)<br />
 
