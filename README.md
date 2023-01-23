@@ -76,13 +76,22 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/Q-eo4-E6rU4)  
 
-### 1.6 [PART #6: SwiftUI & Firebase & Authentication + Delete Data App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)  
+### 22.6 [PART #6: SwiftUI & Firebase & Authentication + Delete Data App.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)  
 
 #### Delete Data in Firebase Firestore.
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase)<br />
 
 [YouTube](https://youtu.be/B9w3pBUi3Vc)
+
+### 22.7 [PART #7 To-Do App SwiftUI & Firebase  &  Firestore & Real-Time Update Data.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%207)  
+
+#### Real-Time Update Data between devices by using Firebase Firestore. 
+  
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%207)<br />
+
+[YouTube](https://youtu.be/aYsOg1LF4Uk)
 
 
 
