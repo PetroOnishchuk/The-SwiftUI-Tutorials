@@ -87,7 +87,20 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%207)<br />
 
-[YouTube](https://youtu.be/aYsOg1LF4Uk)
+[YouTube](https://youtu.be/aYsOg1LF4Uk)  
+
+### 1.8 [PART #8 To-Do App SwiftUI & Firebase  &  Firestore & Sign in with Apple.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%208)  
+
+#### SwiftUI 4.0 
+#### Xcode 14 
+#### Firebase Authentication 
+#### Firebase Firestore
+#### Sign in with Apple
+  
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%208)<br />
+
+[YouTube](https://youtu.be/dndXGAnW00I)
 
 
 
