@@ -102,6 +102,49 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/dndXGAnW00I)
 
+### 1.9 [PART #9 To-Do App SwiftUI & Firebase  &  Firestore & Sign in with Google.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%209)  
+
+#### SwiftUI 4.0 
+#### Xcode 14 
+#### Firebase Authentication 
+#### Firebase Firestore
+#### Sign in with Apple
+#### Sign in with Google
+#### Multiline TextField  
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%209)<br />
+
+[YouTube](https://youtu.be/baUxyeWxAok)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
