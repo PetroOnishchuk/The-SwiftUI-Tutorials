@@ -120,6 +120,18 @@ My 👋Clubhouse account: [@petro_onishchuk](https://www.joinclubhouse.com/@petr
 
 [YouTube](https://youtu.be/baUxyeWxAok)
 
+### 22.10 [PART #10 To-Do App SwiftUI & Firebase  &  Firestore & Firebase Remote Config.](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%2010)  
+
+#### SwiftUI 4.0 
+#### Xcode 14 
+#### Add Firebase Remote Config.
+#### Update Update Sign-In Screen.
+#### Update Sign-Up Screen.
+
+[GitHub](https://github.com/PetroOnishchuk/The-SwiftUI-Tutorials/tree/master/To-Do-App-SwiftUI-Firebase/To-Do%20App%20SwiftUI%20Firebase/Part%2010)<br />
+
+ 
+
 
 
 
